@@ -25,4 +25,12 @@ public class FarewellRest_EXAMPLE {
         //examaple: http://localhost:8080/farewell/Seeya/ido
     }
 
+
+    @Secured({Params.UserRoles.SimpleUser, Params.UserRoles.AdminUser})
+    @RequestMapping(value = "Seeya/{name}", method = RequestMethod.GET)
+    String readBookmark1(@PathVariable String name) {
+        return "Seeya "+name;
+        //examaple: http://localhost:8080/farewell/Seeya/ido
+    }
+
 }
