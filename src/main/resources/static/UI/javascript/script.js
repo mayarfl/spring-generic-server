@@ -176,8 +176,7 @@ scotchApp.controller('signupController1', function ($scope, $http) {
                 $scope.message = "Signed up successfully";
                 $scope.$parent.loggedin = true;
                 $scope.$parent.headerUsername = data.username;
-            }
-            else {
+            } else {
                 $scope.message = data.result;
             }
         }).error(function (data, status, headers, config) {
@@ -185,6 +184,7 @@ scotchApp.controller('signupController1', function ($scope, $http) {
             $scope.message = "Error. something went wrong.";
         });
     };
+});
 
 
 scotchApp.controller('signupController', function ($scope, $http) {
