@@ -72,6 +72,13 @@
             <artifactId>spring-boot-starter-test</artifactId>
             <scope>test</scope>
         </dependency>
+
+        <dependency>
+            <groupId>com.hp.mqm</groupId>
+            <artifactId>nga-surefire-listener</artifactId>
+            <version>12.53.22.692-master</version>
+        </dependency>
+
     </dependencies>
 
     <build>
@@ -162,6 +169,12 @@
                 <!-- Minimal supported version is 2.4  -->
                 <version>2.19.1</version>
                 <configuration>
+                    <properties>
+                        <property>
+                            <name>listener</name>
+                            <value>com.hp.mqm.listeners.surefire.JUnitListener</value>
+                        </property>
+                    </properties>
                     <argLine>${surefire.jacoco.args}</argLine>
                 </configuration>
             </plugin>
@@ -171,6 +184,12 @@
                 <artifactId>maven-failsafe-plugin</artifactId>
                 <version>2.19.1</version>
                 <configuration>
+                    <properties>
+                        <property>
+                            <name>listener</name>
+                            <value>com.hp.mqm.listeners.surefire.JUnitListener</value>
+                        </property>
+                    </properties>
                     <argLine>${failsafe.jacoco.args}</argLine>
                 </configuration>
                 <executions>
