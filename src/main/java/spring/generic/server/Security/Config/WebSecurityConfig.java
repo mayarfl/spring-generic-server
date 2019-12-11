@@ -20,6 +20,7 @@ import spring.generic.server.Security.Handlers.AuthSuccessHandler;
 import spring.generic.server.Security.Handlers.HttpLogoutSuccessHandler;
 import spring.generic.server.Security.Others.HttpAuthenticationEntryPoint;
 import spring.generic.server.Security.Others.NuvolaUserDetailsService;
+import spring.generic.server.Security.Parameters.Common;
 import spring.generic.server.Security.Parameters.Parameters;
 import spring.generic.server.Security.Parameters.ResourcePaths;
 
@@ -92,7 +93,9 @@ public class WebSecurityConfig extends WebSecurityConfigurerAdapter {
                 .permitAll()
                 .loginProcessingUrl(LOGIN_PATH)
                 .usernameParameter(Parameters.USERNAME)
+                .usernameParameter(Common.USERNAME)
                 .passwordParameter(Parameters.PASSWORD)
+                .passwordParameter(Common.PASSWORD)
                 .successHandler(authSuccessHandler)
                 .failureHandler(authFailureHandler);
 
