@@ -106,6 +106,22 @@ public class WebSecurityConfig extends WebSecurityConfigurerAdapter {
 
               http.addFilterBefore(corsFilter, ChannelProcessingFilter.class);
 
+        http.formLogin()
+                .permitAll()
+                .loginProcessingUrl(LOGIN_PATH)
+                .usernameParameter(Parameters.USERNAME)
+                .usernameParameter(Common.USERNAME)
+                .passwordParameter(Parameters.PASSWORD)
+                .passwordParameter(Common.PASSWORD)
+                .successHandler(authSuccessHandler)
+                .failureHandler(authFailureHandler);
+
+        http.logout()
+                .permitAll()
+                .logoutUrl(LOGOUT_PATH)
+                .logoutSuccessHandler(logoutSuccessHandler);
+
+        http.addFilterBefore(corsFilter, ChannelProcessingFilter.class);
 
     }
 }
