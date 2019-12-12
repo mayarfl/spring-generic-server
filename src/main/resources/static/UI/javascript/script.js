@@ -221,6 +221,40 @@ scotchApp.controller('signupController', function ($scope, $http) {
 });
 
 
+
+scotchApp.controller('signupController2', function ($scope, $http) {
+    $scope.showLoader = false;
+    $scope.login = function () {
+        $scope.message = "";
+        $scope.showLoader = true;
+        var jsonObj =
+            {
+                "email": $scope.username,
+                "password": $scope.password,
+                "birthdate": "1.1.2001"
+
+            };
+        $http({
+            url: "http://127.0.0.1:8080/user/signup/",
+            method: "POST",
+            data: jsonObj
+        }).success(function (data, status, headers, config) {
+            $scope.showLoader = false;
+            if (data.result) {
+                $scope.message = "Signed up successfully";
+                $scope.$parent.loggedin = true;
+                $scope.$parent.headerUsername = data.username;
+            }
+            else {
+                $scope.message = data.result;
+            }
+        }).error(function (data, status, headers, config) {
+            $scope.showLoader = false;
+            $scope.message = "Error. something went wrong.";
+        });
+    };
+});
+
 function setHeaderUsername(response) {
     var answer = angular.fromJson(response.data);
     return answer.username;

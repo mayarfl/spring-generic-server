@@ -31,8 +31,10 @@ public class IdosTests {
         User u2 = UserUtills.getUserByEmail("simple-user3");
         System.out.println(u2.getEmail()+":"+u2.getRole());
         User u3 = UserUtills.getUserByEmail("simple-user3");
-        System.out.println(u2.getEmail()+":"+u3.getRole());
+        System.out.println(u3.getEmail()+":"+u3.getRole());
         User u4 = UserUtills.getUserByEmail("simple-user3");
-        System.out.println(u2.getEmail()+":"+u4.getRole());
+        System.out.println(u4.getEmail()+":"+u4.getRole());
+        User u5 = UserUtills.getUserByEmail("simple-user3");
+        System.out.println(u5.getEmail()+":"+u5.getRole());
     }
 }
