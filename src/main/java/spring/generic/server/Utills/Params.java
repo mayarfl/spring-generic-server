@@ -16,4 +16,9 @@ public class Params {
         public static final String SimpleUser = "ROLE_SIMPLE";
         public static final String AdminUser = "ROLE_ADMIN";
     }
+
+    public class User {
+        public static final String NAME = "ROLE_SIMPLE";
+        public static final String PASSWORD = "ROLE_ADMIN";
+    }
 }
