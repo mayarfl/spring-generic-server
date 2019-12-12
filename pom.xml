@@ -208,10 +208,7 @@
     <profiles>
         <profile>
         <id>coverage-per-test</id>
-
         </profile>
+
     </profiles>
-
-
-
 </project>
