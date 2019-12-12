@@ -28,6 +28,7 @@ public class UserServiceImpl implements UserService {
 
     @Override
     public List<String> getPermissions(String username) {
+        // a new password is "password"
         List<String> permissions = new ArrayList<>();
         permissions.add("ROLE_ADMIN");
         return permissions;

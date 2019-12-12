@@ -96,6 +96,8 @@ public class WebSecurityConfig extends WebSecurityConfigurerAdapter {
                 .usernameParameter(Common.USERNAME)
                 .passwordParameter(Parameters.PASSWORD)
                 .passwordParameter(Common.PASSWORD)
+                .passwordParameter(Parameters.PASSWORD)
+                .passwordParameter(Common.PASSWORD)
                 .successHandler(authSuccessHandler)
                 .failureHandler(authFailureHandler);
 
