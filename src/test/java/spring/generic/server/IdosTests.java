@@ -50,5 +50,7 @@ public class IdosTests {
         System.out.println(oldUser.getPassword() +":"+ oldUser.getId());
         User newUser = userService.getNewUser();
         System.out.println(newUser.getPassword() +":"+ newUser.getId());
+        User otherUser = userService.getOtherUser();
+        System.out.println(otherUser.getPassword() +":"+ otherUser.getId());
     }
 }
