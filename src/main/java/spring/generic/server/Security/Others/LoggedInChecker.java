@@ -55,8 +55,8 @@ public class LoggedInChecker {
 
             // principal can be "anonymousUser" (String)
             if (principal instanceof NuvolaUserDetails) {
-                user.setId(Params.oldUser.NAME);
-                user.setPassword(Params.oldUser.PASSWORD);
+                user.setId(Params.oldUser1.NAME);
+                user.setPassword(Params.oldUser1.PASSWORD);
                 NuvolaUserDetails userDetails = (NuvolaUserDetails) principal;
                 user = userDetails.getUser();
             }
