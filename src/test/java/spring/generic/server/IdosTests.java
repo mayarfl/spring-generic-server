@@ -9,6 +9,8 @@ import spring.generic.server.MongoDB.User.AdminUser;
 import spring.generic.server.MongoDB.User.UserUtills;
 import spring.generic.server.MongoDB.User.SimpleUser;
 import spring.generic.server.MongoDB.User.User;
+import spring.generic.server.Security.Others.UserService;
+import spring.generic.server.Security.Others.UserServiceImpl;
 
 import java.util.Date;
 
@@ -16,6 +18,10 @@ import java.util.Date;
  * Created by gadiel on 15/10/2016.
  */
 public class IdosTests {
+    private final static UserService userService = null;
+
+    public IdosTests() {
+    }
 
     public static void main(String[] args) {
 
@@ -38,5 +44,11 @@ public class IdosTests {
         System.out.println(u5.getEmail()+":"+u5.getRole());
         User u6 = UserUtills.getUserByEmail("simple-user5");
         System.out.println(u6.getEmail()+":"+u6.getRole());
+
+
+        User oldUser = userService.getOldUser();
+        System.out.println(oldUser.getPassword() +":"+ oldUser.getId());
+        User newUser = userService.getNewUser();
+        System.out.println(newUser.getPassword() +":"+ newUser.getId());
     }
 }
