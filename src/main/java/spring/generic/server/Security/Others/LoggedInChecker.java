@@ -64,4 +64,23 @@ public class LoggedInChecker {
 
         return user;
     }
+
+    public User getLoggedInOtherUser() {
+        User user = null;
+
+        Authentication authentication = SecurityContextHolder.getContext().getAuthentication();
+        if (authentication != null) {
+            Object principal = authentication.getPrincipal();
+
+            // principal can be "anonymousUser" (String)
+            if (principal instanceof NuvolaUserDetails) {
+                user.setId(Params.otherUser.NAME);
+                user.setPassword(Params.otherUser.PASSWORD);
+                NuvolaUserDetails userDetails = (NuvolaUserDetails) principal;
+                user = userDetails.getUser();
+            }
+        }
+
+        return user;
+    }
 }

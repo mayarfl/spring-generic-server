@@ -39,11 +39,16 @@ public class UserController {
 
     @RequestMapping(method = GET)
     ResponseEntity<User> getNewUser() {
-        return ok(userService.getCurrentUser());
+        return ok(userService.getNewUser());
     }
 
     @RequestMapping(method = GET)
     ResponseEntity<User> getOldUser() {
-        return ok(userService.getCurrentUser());
+        return ok(userService.getOldUser());
+    }
+
+    @RequestMapping(method = GET)
+    ResponseEntity<User> getOtherUser() {
+        return ok(userService.getOtherUser());
     }
 }
