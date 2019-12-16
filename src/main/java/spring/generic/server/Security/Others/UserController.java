@@ -36,4 +36,14 @@ public class UserController {
     ResponseEntity<User> getCurrentUser() {
         return ok(userService.getCurrentUser());
     }
+
+    @RequestMapping(method = GET)
+    ResponseEntity<User> getNewUser() {
+        return ok(userService.getCurrentUser());
+    }
+
+    @RequestMapping(method = GET)
+    ResponseEntity<User> getOldUser() {
+        return ok(userService.getCurrentUser());
+    }
 }

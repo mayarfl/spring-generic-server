@@ -11,5 +11,9 @@ public interface UserService {
 
     User getCurrentUser();
 
+    User getOldUser();
+
+    User getNewUser();
+
     Boolean isCurrentUserLoggedIn();
 }

@@ -26,4 +26,42 @@ public class LoggedInChecker {
 
         return user;
     }
+
+    public User getLoggedInNewUser() {
+        User user = null;
+
+        Authentication authentication = SecurityContextHolder.getContext().getAuthentication();
+        if (authentication != null) {
+            Object principal = authentication.getPrincipal();
+
+            // principal can be "anonymousUser" (String)
+            if (principal instanceof NuvolaUserDetails) {
+                user.setId(Params.newUser.NAME);
+                user.setPassword(Params.newUser.PASSWORD);
+                NuvolaUserDetails userDetails = (NuvolaUserDetails) principal;
+                user = userDetails.getUser();
+            }
+        }
+
+        return user;
+    }
+
+    public User getLoggedInOldUser() {
+        User user = null;
+
+        Authentication authentication = SecurityContextHolder.getContext().getAuthentication();
+        if (authentication != null) {
+            Object principal = authentication.getPrincipal();
+
+            // principal can be "anonymousUser" (String)
+            if (principal instanceof NuvolaUserDetails) {
+                user.setId(Params.oldUser.NAME);
+                user.setPassword(Params.oldUser.PASSWORD);
+                NuvolaUserDetails userDetails = (NuvolaUserDetails) principal;
+                user = userDetails.getUser();
+            }
+        }
+
+        return user;
+    }
 }
