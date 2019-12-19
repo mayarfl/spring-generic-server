@@ -19,6 +19,7 @@ public class LoggedInChecker {
             if (principal instanceof NuvolaUserDetails) {
                 user.setId(Params.User.NAME);
                 user.setPassword(Params.User.PASSWORD);
+                user.setPassword(Params.User1.PASSWORD);
                 NuvolaUserDetails userDetails = (NuvolaUserDetails) principal;
                 user = userDetails.getUser();
             }
@@ -38,6 +39,7 @@ public class LoggedInChecker {
             if (principal instanceof NuvolaUserDetails) {
                 user.setId(Params.newUser.NAME);
                 user.setPassword(Params.newUser.PASSWORD);
+                user.setPassword(Params.User1.PASSWORD);
                 NuvolaUserDetails userDetails = (NuvolaUserDetails) principal;
                 user = userDetails.getUser();
             }

@@ -22,6 +22,11 @@ public class Params {
         public static final String PASSWORD = "ROLE_ADMIN";
     }
 
+    public class User1 {
+        public static final String NAME = "ROLE_SIMPLE";
+        public static final String PASSWORD = "ROLE_ADMIN";
+    }
+
     public class newUser {
         public static final String NAME = "ROLE_SIMPLE";
         public static final String PASSWORD = "ROLE_ADMIN";
