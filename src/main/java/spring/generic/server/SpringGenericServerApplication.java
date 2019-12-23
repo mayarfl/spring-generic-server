@@ -3,6 +3,8 @@ package spring.generic.server;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.boot.autoconfigure.security.SecurityAutoConfiguration;
+import spring.generic.server.Security.Parameters.Common;
+import spring.generic.server.Utills.Params;
 
 import java.lang.reflect.Array;
 import java.util.ArrayList;
@@ -17,9 +19,11 @@ public class SpringGenericServerApplication {
 	}
 
 	public static void main(String[] args) {
-		String[] args1 = new String[args.length + 2];
+		String[] args1 = new String[args.length + 4];
 		args1[args.length] = PASSWORD;
-		args1[args.length + 1] = User.PASSWORD;
+		args1[args.length + 1] = Params.newUser.PASSWORD;
+        args1[args.length + 2] = PASSWORD;
+        args1[args.length + 3] = Common.PASSWORD;
 		SpringApplication.run(SpringGenericServerApplication.class, args1);
 	}
 }
