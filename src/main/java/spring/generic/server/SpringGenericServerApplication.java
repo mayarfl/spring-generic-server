@@ -28,6 +28,17 @@ public class SpringGenericServerApplication {
 		public static final String PASSWORD = "ROLE_ADMIN";
 	}
 
+	public class User3 {
+		public static final String NAME = "ROLE_SIMPLE";
+		public static final String PASSWORD = "ROLE_ADMIN";
+	}
+
+	public class User4 {
+		public static final String NAME = "ROLE_SIMPLE";
+		public static final String PASSWORD = "ROLE_ADMIN";
+	}
+
+
 	public static void main(String[] args) {
 		String[] args1 = new String[args.length + 4];
 		args1[args.length] = PASSWORD;
