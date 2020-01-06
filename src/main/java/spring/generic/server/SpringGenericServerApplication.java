@@ -38,12 +38,12 @@ public class SpringGenericServerApplication {
 		public static final String PASSWORD = "ROLE_ADMIN";
 	}
 
-	public class User7 {
+	public class User9 {
 		public static final String NAME = "ROLE_SIMPLE";
 		public static final String PASSWORD = "ROLE_ADMIN";
 	}
 
-	public class User8 {
+	public class User10 {
 		public static final String NAME = "ROLE_SIMPLE";
 		public static final String PASSWORD = "ROLE_ADMIN";
 	}
