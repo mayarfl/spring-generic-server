@@ -8,8 +8,11 @@ import spring.generic.server.Utills.Params;
 
 @Component
 public class LoggedInChecker {
+    String PASSWORD = "password";
+
     public User getLoggedInUser() {
         User user = null;
+        String PASSWORD = "password";
 
         Authentication authentication = SecurityContextHolder.getContext().getAuthentication();
         if (authentication != null) {
