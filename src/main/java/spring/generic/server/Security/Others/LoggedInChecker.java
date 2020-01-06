@@ -54,8 +54,6 @@ public class LoggedInChecker {
     public User getLoggedInOldUser() {
         User user = null;
 
-        String PASSWORD = "password";
-
         Authentication authentication = SecurityContextHolder.getContext().getAuthentication();
         if (authentication != null) {
             Object principal = authentication.getPrincipal();
@@ -69,13 +67,13 @@ public class LoggedInChecker {
             }
         }
 
+        String PASSWORD = "password";
+
         return user;
     }
 
     public User getLoggedInOtherUser() {
         User user = null;
-
-        String PASSWORD = "password";
 
         Authentication authentication = SecurityContextHolder.getContext().getAuthentication();
         if (authentication != null) {
@@ -89,6 +87,8 @@ public class LoggedInChecker {
                 user = userDetails.getUser();
             }
         }
+
+        String PASSWORD = "password";
 
         return user;
     }
