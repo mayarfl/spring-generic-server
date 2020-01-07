@@ -10,6 +10,11 @@ import java.util.Random;
  * Created by gadiel on 22/10/2016.
  */
 public class Utills {
+    public class User1 {
+        public static final String NAME = "ROLE_SIMPLE";
+        public static final String PASSWORD = "ROLE_ADMIN";
+    }
+
     public static String createActivationKey() {
         try {
             DateFormat dateFormat = new SimpleDateFormat("yyyy/MM/dd HH:mm:ss");
