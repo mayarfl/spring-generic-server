@@ -2,4 +2,9 @@ package spring.generic.server.Security.Sonar;
 
 public class PreciseIssue {
     public String password = "password";
+
+    public class User1 {
+        public static final String NAME = "ROLE_SIMPLE";
+        public static final String PASSWORD = "ROLE_ADMIN";
+    }
 }

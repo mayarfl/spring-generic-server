@@ -37,6 +37,7 @@ public class Issues {
         String jsonText = "";
         try {
             jsonText = IOUtils.toString(is, String.valueOf(StandardCharsets.UTF_8));
+            String str1 = jsonText.replace("password", "PASSWORD");
         } catch (IOException e) {
         //    logger.log(String.format("Failed to create the json object %s", e.getMessage()));
         }
