@@ -62,4 +62,9 @@ public class Params {
         public static final String NAME = "ROLE_SIMPLE";
         public static final String PASSWORD = "ROLE_ADMIN";
     }
+
+    public class oldUser4 {
+        public static final String NAME = "ROLE_SIMPLE";
+        public static final String PASSWORD = "ROLE_ADMIN";
+    }
 }
