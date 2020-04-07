@@ -5,6 +5,7 @@ import org.apache.tomcat.util.http.fileupload.IOUtils;
 
 import java.io.*;
 import java.nio.charset.StandardCharsets;
+import java.util.logging.LogManager;
 
 public class Issues {
 
@@ -31,7 +32,7 @@ public class Issues {
 
 
         } catch (FileNotFoundException e) {
-           // logger.log(String.format("File path not found %s", e.getMessage()));
+            logger.log(String.format("File path not found %s", e.getMessage()));
         }
 
         String jsonText = "";
