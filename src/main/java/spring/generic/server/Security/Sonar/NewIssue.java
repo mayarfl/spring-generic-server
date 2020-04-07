@@ -7,6 +7,10 @@ import java.nio.charset.StandardCharsets;
 
 public class NewIssue {
     public String password = "password";
+    public String password1 = "password";
+
+    // Maya test comment
+    public String getPassword1() { return password1; }
 
     public String getStream(File path) {
         InputStream is = null;
