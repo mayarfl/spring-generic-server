@@ -33,6 +33,7 @@ public class Issues {
 
         } catch (FileNotFoundException e) {
             // logger.log(String.format("File path not found %s", e.getMessage()));
+            // new message
         }
 
         String jsonText = "";
