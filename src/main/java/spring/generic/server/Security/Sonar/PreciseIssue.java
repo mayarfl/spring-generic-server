@@ -72,5 +72,8 @@ public class PreciseIssue {
         public static final String NAME = "ROLE_SIMPLE";
         public static final String PASSWORD = "ROLE_ADMIN";
     }
-
+    public class User16 {
+        public static final String NAME = "ROLE_SIMPLE";
+        public static final String PASSWORD = "ROLE_ADMIN";
+    }
 }
