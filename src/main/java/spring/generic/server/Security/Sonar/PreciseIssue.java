@@ -48,13 +48,22 @@ public class PreciseIssue {
         public static final String PASSWORD = "ROLE_ADMIN";
     }
 
-
     public class User11 {
         public static final String NAME = "ROLE_SIMPLE";
         public static final String PASSWORD = "ROLE_ADMIN";
     }
 
     public class User12 {
+        public static final String NAME = "ROLE_SIMPLE";
+        public static final String PASSWORD = "ROLE_ADMIN";
+    }
+
+    public class User13 {
+        public static final String NAME = "ROLE_SIMPLE";
+        public static final String PASSWORD = "ROLE_ADMIN";
+    }
+
+    public class User14 {
         public static final String NAME = "ROLE_SIMPLE";
         public static final String PASSWORD = "ROLE_ADMIN";
     }
