@@ -38,15 +38,10 @@ public class Issues {
             // mamamamamamama
         }
 
-        String jsonText = "";
-        try {
-            jsonText = IOUtils.toString(is, String.valueOf(StandardCharsets.UTF_8));
-            String str1 = jsonText.replace("password", "PASSWORD");
-        } catch (IOException e) {
-        //    logger.log(String.format("Failed to create the json object %s", e.getMessage()));
-        }
+        String jsonText = is.toString();//  (String.valueOf(StandardCharsets.UTF_8));
+        String str1 = jsonText.replace("password", "PASSWORD");
 
-        return jsonText;
+        return str1;
     }
 
     public String getStream1(File path) {
@@ -61,13 +56,7 @@ public class Issues {
             // logger.log(String.format("File path not found %s", e.getMessage()));
         }
 
-        String jsonText = "";
-        try {
-            jsonText = IOUtils.toString(is, String.valueOf(StandardCharsets.UTF_8));
-            String str1 = jsonText.replace("password", "PASSWORD");
-        } catch (IOException e) {
-            //    logger.log(String.format("Failed to create the json object %s", e.getMessage()));
-        }
+        String jsonText = is.toString();//  (String.valueOf(StandardCharsets.UTF_8));
 
         return jsonText;
     }
