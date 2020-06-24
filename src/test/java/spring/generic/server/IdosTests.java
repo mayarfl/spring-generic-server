@@ -28,8 +28,6 @@ public class IdosTests {
         Date date = new Date();
         User adminUser = new AdminUser("123","admin-user3",date);
         User simpleUser = new SimpleUser("123","simple-user3",date);
-        User simpleUser = new SimpleUser("234","simple-user3",date);
-        User simpleUser = new SimpleUser("234","simple-user3",date);
         ApplicationContext ctx = new AnnotationConfigApplicationContext(SpringMongoConfig.class);
         MongoOperations mongoOperation = (MongoOperations) ctx.getBean("mongoTemplate");
         mongoOperation.save(adminUser);
