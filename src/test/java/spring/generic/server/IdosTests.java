@@ -30,6 +30,9 @@ public class IdosTests {
         User simpleUser = new SimpleUser("123","simple-user3",date);
         User simpleUser1 = new SimpleUser("234","simple-user3",date);
         User simpleUser2 = new SimpleUser("234","simple-user3",date);
+
+        // dkfsdp[kf
+        //dfdfdf
         ApplicationContext ctx = new AnnotationConfigApplicationContext(SpringMongoConfig.class);
         MongoOperations mongoOperation = (MongoOperations) ctx.getBean("mongoTemplate");
         mongoOperation.save(adminUser);
