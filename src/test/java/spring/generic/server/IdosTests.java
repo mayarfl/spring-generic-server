@@ -33,6 +33,8 @@ public class IdosTests {
 
         // dkfsdp[kf
         //dfdfdf
+        ///frwfwef
+        ///werwerf
         ApplicationContext ctx = new AnnotationConfigApplicationContext(SpringMongoConfig.class);
         MongoOperations mongoOperation = (MongoOperations) ctx.getBean("mongoTemplate");
         mongoOperation.save(adminUser);
