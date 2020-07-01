@@ -31,9 +31,7 @@ public class IdosTests {
         User simpleUser1 = new SimpleUser("234","simple-user3",date);
         User simpleUser2 = new SimpleUser("234","simple-user3",date);
 
-        // dkfsdp[kf
-        //dfdfdf
-        ///frwfwef
+
         ///werwerf
         ApplicationContext ctx = new AnnotationConfigApplicationContext(SpringMongoConfig.class);
         MongoOperations mongoOperation = (MongoOperations) ctx.getBean("mongoTemplate");
