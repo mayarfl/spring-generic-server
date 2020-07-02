@@ -36,14 +36,7 @@ public class IdosTests {
          * dfsdf
          * fds
          * dfsdfsdf
-         * dfref
-         *dddd
-         *
-         * reyehy
-         *
-         * ddd
-         * ddddd
-         *
+
          * ddddd
          * */
         //dfdfdf
