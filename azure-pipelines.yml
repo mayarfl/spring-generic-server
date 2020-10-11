@@ -5,7 +5,7 @@
 
 variables:
   InjectAlmOctaneTasks: 'true'
-  AlmOctaneConnection33: 'demo'
+  AlmOctaneConnection33: 'qa9'
   AlmOctaneConnection33Workspaces: '1002'
   ALMOctaneLogLevel: 'debug'
   system.debug: 'true'
