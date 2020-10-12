@@ -1,20 +1,19 @@
-# Starter pipeline
-# Start with a minimal pipeline that you can customize to build and deploy your code..
-# Add steps that build, run tests, deploy, and more:
-# https://aka.ms/yaml
-
 variables:
-  InjectAlmOctaneTasks: 'true'
-  AlmOctaneConnection33: 'qa9'
-  AlmOctaneConnection33Workspaces: '1002'
-  ALMOctaneLogLevel: 'debug'
-  system.debug: 'true'
-  system.debugContext: 'true'
-  GithubRepositoryConnection: 'mayarfl'
+  # InjectAlmOctaneTasks: 'true'
+  OctaneConnectionName: 'qa9'
+  WS_ID: '1002'
+  GithubRepositoryConnection: 'maya_hp_demo_app'
+
 
 jobs:
 - job: AlmOctanePipelineStart
   condition: always()
+  steps:
+  - task: octane-start-task@1
+    inputs:
+      OctaneServiceConnection: $(OctaneConnectionName)
+      WorkspaceList: $(WS_ID)
+      GithubRepositoryConnection: $(GithubRepositoryConnection)
 
 - job: A
   steps:
@@ -41,6 +40,13 @@ jobs:
 
 - job: AlmOctanePipelineEnd
   condition: always()
+  steps:
+  - task: octane-end-task@1
+    inputs:
+      OctaneServiceConnection: $(OctaneConnectionName)
+      WorkspaceList: $(WS_ID)
+      GithubRepositoryConnection: $(GithubRepositoryConnection)
+
   dependsOn:
   - AlmOctanePipelineStart
   - A
