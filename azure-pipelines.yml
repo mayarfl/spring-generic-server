@@ -2,7 +2,7 @@ variables:
   # InjectAlmOctaneTasks: 'true'
   OctaneConnectionName: 'qa9'
   WS_ID: '1002'
-  GithubRepositoryConnection: 'mayarfl'
+  GithubRepositoryConnection: 'maya_git_access'
 
 
 jobs:
