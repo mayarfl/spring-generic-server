@@ -12,7 +12,6 @@ dasds
 sfsasfsfasfa
 
 git@github.houston.softwaregrp.net:MQM/mqm.git
-tgaerfr
 
 https://github.houston.softwaregrp.net/MQM/mqm.git
 
