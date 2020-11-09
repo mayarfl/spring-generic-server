@@ -1,0 +1,986 @@
+ ##[section]Starting: octaneendtask
+ ==============================================================================
+ Task         : ALM Octane Job End
+ Description  : ALM Octane End Task
+ Version      : 1.1.0
+ Author       : Micro Focus
+ Help         : 
+ ==============================================================================
+ ##[debug]Using node path: /home/vsts/agents/2.175.2/externals/node/bin/node
+ ##[debug]agent.TempDirectory=/home/vsts/work/_temp
+ ##[debug]loading inputs and endpoints
+ ##[debug]loading INPUT_OCTANESERVICECONNECTION
+ ##[debug]loading INPUT_WORKSPACELIST
+ ##[debug]loading INPUT_GITHUBREPOSITORYCONNECTION
+ ##[debug]loading ENDPOINT_AUTH_b45ca5aa-aab3-478e-a120-ada9569bedec
+ ##[debug]loading ENDPOINT_AUTH_SCHEME_b45ca5aa-aab3-478e-a120-ada9569bedec
+ ##[debug]loading ENDPOINT_AUTH_PARAMETER_b45ca5aa-aab3-478e-a120-ada9569bedec_USERNAME
+ ##[debug]loading ENDPOINT_AUTH_PARAMETER_b45ca5aa-aab3-478e-a120-ada9569bedec_PASSWORD
+ ##[debug]loading ENDPOINT_AUTH_30ef8765-59d3-4b2e-9305-a3d8177ebc31
+ ##[debug]loading ENDPOINT_AUTH_SCHEME_30ef8765-59d3-4b2e-9305-a3d8177ebc31
+ ##[debug]loading ENDPOINT_AUTH_PARAMETER_30ef8765-59d3-4b2e-9305-a3d8177ebc31_ACCESSTOKEN
+ ##[debug]loading ENDPOINT_AUTH_SYSTEMVSSCONNECTION
+ ##[debug]loading ENDPOINT_AUTH_SCHEME_SYSTEMVSSCONNECTION
+ ##[debug]loading ENDPOINT_AUTH_PARAMETER_SYSTEMVSSCONNECTION_ACCESSTOKEN
+ ##[debug]loading SECRET_SYSTEM_ACCESSTOKEN
+ ##[debug]loaded 14
+ ##[debug]Agent.ProxyUrl=undefined
+ ##[debug]Agent.CAInfo=undefined
+ ##[debug]Agent.ClientCert=undefined
+ ##[debug]Agent.SkipCertValidation=undefined
+ ##[debug]ALMOctaneLogLevel=debug
+ [DEBUG]ALMOctaneLogLevel: debug
+ ##[debug]which 'node'
+ ##[debug]found: '/usr/local/bin/node'
+ ##[debug]which 'node'
+ ##[debug]found: '/usr/local/bin/node'
+ ##[debug]/usr/local/bin/node arg: --version
+ ##[debug]/usr/local/bin/node arg: --version
+ ##[debug]exec tool: /usr/local/bin/node
+ ##[debug]exec tool: /usr/local/bin/node
+ ##[debug]arguments:
+ ##[debug]arguments:
+ ##[debug]   --version
+ ##[debug]   --version
+ [command]/usr/local/bin/node --version
+ v14.15.0
+ [INFO]node version = v14.15.0
+ 
+ ##[debug]OctaneServiceConnection=b45ca5aa-aab3-478e-a120-ada9569bedec
+ [INFO]OctaneService = b45ca5aa-aab3-478e-a120-ada9569bedec
+ ##[debug]b45ca5aa-aab3-478e-a120-ada9569bedec=https://qa8.almoctane.com/ui/?p=1001
+ [DEBUG]rawUrl = https://qa8.almoctane.com/ui/?p=1001
+ [INFO]url.href = https://qa8.almoctane.com/ui/?p=1001
+ ##[debug]b45ca5aa-aab3-478e-a120-ada9569bedec data instance_id = qa8
+ ##[debug]b45ca5aa-aab3-478e-a120-ada9569bedec data AZURE_PERSONAL_ACCESS_TOKEN = undefined
+ [DEBUG]token = undefined
+ [INFO]instanceId = qa8
+ b45ca5aa-aab3-478e-a120-ada9569bedec exists true
+ ##[debug]b45ca5aa-aab3-478e-a120-ada9569bedec exists true
+ [DEBUG]clientId = ***
+ [DEBUG]clientSecret = ***
+ ##[debug]System.TeamFoundationCollectionUri=https://dev.azure.com/mayar0110/
+ ##[debug]System.TeamProjectId=a56aa160-dc3a-432f-80dd-9e483fc7cad4
+ ##[debug]System.TeamProject=PublicExtText
+ ##[debug]Build.DefinitionName=mayarfl.hpe-demo-app-1
+ ##[debug]Build.BuildId=266
+ ##[debug]Build.SourceBranchName=master
+ ##[debug]Agent.JobName=AlmOctanePipelineEnd
+ [INFO]collectionUri = https://dev.azure.com/mayar0110/
+ [INFO]projectId = a56aa160-dc3a-432f-80dd-9e483fc7cad4
+ [INFO]projectName = PublicExtText
+ [INFO]buildDefinitionName = mayarfl.hpe-demo-app-1
+ [INFO]agentJobName = AlmOctanePipelineEnd
+ [INFO]sourceBranchName = master
+ ##[debug]AGENT_JOBSTATUS=Succeeded
+ [INFO]Project full name:AzureDevOps.qa8.PublicExtText
+ [INFO]Job full name:AzureDevOps.qa8.PublicExtText.mayarfl.hpe-demo-app-1
+ [INFO]Pipeline full name:AzureDevOps.qa8.PublicExtText.mayarfl.hpe-demo-app-1@@@AlmOctanePipelineEnd
+ ##[debug]WorkspaceList=32003
+ [INFO]workspaces = 32003
+ [INFO]Workspace 32003: authentication passed
+ [DEBUG]instanceId: qa8
+ [DEBUG]ciServers: 
+ [DEBUG][{"type":"ci_server","last_modified":"2020-11-08T22:10:29Z","id":"39013","workspace_id":32003,"version_stamp":2,"server_type":"azure_devops","name":"AzureDevOps.qa8.PublicExtText","url":"https://dev.azure.com/mayar0110/PublicExtText","instance_id":"qa8","creation_time":"2020-11-08T22:10:25Z","is_supported":true,"is_connected":true,"author":{"type":"workspace_user","id":"423004","workspace_id":32003,"name":"***","activity_level":0,"full_name":"Azure"}}]
+ ##[debug]Getting credentials for local feeds
+ SYSTEMVSSCONNECTION exists true
+ ##[debug]SYSTEMVSSCONNECTION exists true
+ ##[debug]Got auth token
+ ##[debug]Agent.ProxyUrl=undefined
+ [DEBUG]Sending event:
+ {"projectDisplayName":"AlmOctanePipelineEnd","eventType":"finished","buildCiId":"266","number":"266","project":"AzureDevOps.qa8.PublicExtText.mayarfl.hpe-demo-app-1","result":"failure","startTime":1604873502166,"estimatedDuration":null,"duration":85363,"scmData":null,"phaseType":"post","causes":[{"type":"user","userName":"GitHub","userId":"GitHub App\\a56aa160-dc3a-432f-80dd-9e483fc7cad4"}]}
+ [DEBUG]sendEvent response:
+ [DEBUG]{"statusCode":200,"headers":{"date":"Sun, 08 Nov 2020 22:11:43 GMT","content-length":"0","connection":"close","strict-transport-security":"max-age=31536000","octane-server":"884001","x-content-type-options":"nosniff","x-xss-protection":"1","server-timing":"01.87xEntitiesReader;dur=369;,02.14xQueryTransformationReadCommand;dur=55;,03.01xWorkspaceBeforeReadCommand;dur=38;,04.01xPipelinePostReadCommand;dur=25;,05.02xCIServerPostReadCommand;dur=15;,06.01xAddWorkspaceIdCommand;dur=4;,07.01xSharedSpaceFieldsReadCommand;dur=1;,08.01xVirtualFieldCommand;dur=1;,09.01xHandleInternalFields;dur=1;,10.01xEnrichSelectedFieldsWithLockStampCommand;dur=1;,11.01xAuditReadCommand;dur=1;,CPU;dur=147;,DB;dur=226;,WaitForConn;dur=1;,ES;dur=0;,Total;dur=374;","octane-db-query-count":"113","octane-es-query-count":"0","vary":"Accept-Encoding, User-Agent","cf-cache-status":"DYNAMIC","cf-request-id":"064b8355e00000a6b1508a8000000001","expect-ct":"max-age=604800, report-uri=\"https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct\"","server":"cloudflare","cf-ray":"5ef2a19c9e3ca6b1-DUB"},"request":{"uri":{"protocol":"https:","slashes":true,"auth":null,"host":"qa8.almoctane.com","port":443,"hostname":"qa8.almoctane.com","hash":null,"search":null,"query":null,"pathname":"/internal-api/shared_spaces/1001/analytics/ci/events","path":"/internal-api/shared_spaces/1001/analytics/ci/events","href":"https://qa8.almoctane.com/internal-api/shared_spaces/1001/analytics/ci/events"},"method":"PUT","headers":{"HPECLIENTTYPE":"HPE_CI_CLIENT","cookie":"__cfduid=dc22f2062ec340b31bc92adedb025023d1604873498; OCTANE_USER=QXp1cmVfbjFqZ3BvOWVrbW02OGJnMjR3cTQ0cHE3bQ==; LWSSO_COOKIE_KEY=nV5cXrKKD3s7utSpLcnthldFyZf1bWcQZ-E2zzAtYRC7FZenmM8iICfLyOoKlgWl8iznIuyRoRLmKl1JTsDGJseTPONC_yqCbqQ4z6HszIYsaoOE8WyLrs5cRqBM4PjRkwrNcEL_td7Hj282btgbjmIFBZa92Nh2bTx7BVKtQWU13YGDIrrNShkMyFWCMetiF1ZTHcQe-tiuLLOjWf1xP6VnBoxiI5JHQutQnfKcB7Dfbl5QbmkUfWDTGgYriLsqWkK4BtkBU47l4IJOSPh7d9qE_fZHwEiACbmM7GnhfxtsM_wM8ERTl82bIwE7wyp_hrcZK0M3aegPMbU5JxDiU5uOKmO3zu7UgJ5vKG1d5Qs.","accept":"application/json","content-type":"application/json","content-length":604}}}
+ [INFO]Test results converted for Octane
+ [DEBUG]<?xml version="1.0" encoding="utf-8" standalone="yes"?><test_result><build server_id="qa8" job_id="AzureDevOps.qa8.PublicExtText.mayarfl.hpe-demo-app-1" build_id="266"/>
+ <test_fields>
+     
+         <test_field type="Framework" value="junit"/>
+     
+         <test_field type="Test_Level" value="Unit Test"/>
+ </test_fields>
+ <test_runs>
+     
+         <test_run package="com.hp.devops.demoapp.BandTest" name="bandTestA" class="com.hp.devops.demoapp.BandTest.bandTestA" duration="7" status="Passed" started="1604873474000" external_report_url="https://dev.azure.com/mayar0110/PublicExtText/_apis/test/Runs/192/Results/100000"/>
+     
+         <test_run package="com.hp.devops.demoapp.BandTest" name="bandTestB" class="com.hp.devops.demoapp.BandTest.bandTestB" duration="10" status="Failed" started="1604873474000" external_report_url="https://dev.azure.com/mayar0110/PublicExtText/_apis/test/Runs/192/Results/100001">
+             
+                 <error message="expected:&lt;json must have [  an id  ] property&gt; but was:&lt;json must have [an id] property&gt;">org.junit.ComparisonFailure: expected:&amp;lt;json must have [  an id  ] property&amp;gt; but was:&amp;lt;json must have [an id] property&amp;gt;
+ 	at org.junit.Assert.assertEquals(Assert.java:115)
+ 	at org.junit.Assert.assertEquals(Assert.java:144)
+ 	at com.hp.devops.demoapp.BandTest.bandTestB(BandTest.java:69)
+ 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+ 	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+ 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+ 	at java.lang.reflect.Method.invoke(Method.java:498)
+ 	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:47)
+ 	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+ 	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:44)
+ 	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)
+ 	at org.junit.internal.runners.statements.RunBefores.evaluate(RunBefores.java:26)
+ 	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:271)
+ 	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:70)
+ 	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:50)
+ 	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:238)
+ 	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:63)
+ 	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:236)
+ 	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:53)
+ 	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:229)
+ 	at org.junit.runners.ParentRunner.run(ParentRunner.java:309)
+ 	at org.apache.maven.surefire.junit4.JUnit4Provider.execute(JUnit4Provider.java:252)
+ 	at org.apache.maven.surefire.junit4.JUnit4Provider.executeTestSet(JUnit4Provider.java:141)
+ 	at org.apache.maven.surefire.junit4.JUnit4Provider.invoke(JUnit4Provider.java:112)
+ 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+ 	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+ 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+ 	at java.lang.reflect.Method.invoke(Method.java:498)
+ 	at org.apache.maven.surefire.util.ReflectionUtils.invokeMethodWithArray(ReflectionUtils.java:189)
+ 	at org.apache.maven.surefire.booter.ProviderFactory$ProviderProxy.invoke(ProviderFactory.java:165)
+ 	at org.apache.maven.surefire.booter.ProviderFactory.invokeProvider(ProviderFactory.java:85)
+ 	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:115)
+ 	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:75)
+ </error>
+         </test_run>
+     
+         <test_run package="com.hp.devops.demoapp.BandTest" name="bandTestC" class="com.hp.devops.demoapp.BandTest.bandTestC" duration="0" status="Passed" started="1604873474000" external_report_url="https://dev.azure.com/mayar0110/PublicExtText/_apis/test/Runs/192/Results/100002"/>
+     
+         <test_run package="com.hp.devops.demoapp.BandTest" name="bandTestD" class="com.hp.devops.demoapp.BandTest.bandTestD" duration="0" status="Skipped" started="1604873474000" external_report_url="https://dev.azure.com/mayar0110/PublicExtText/_apis/test/Runs/192/Results/100003"/>
+     
+         <test_run package="com.hp.devops.demoapp.BandTest" name="bandTestE" class="com.hp.devops.demoapp.BandTest.bandTestE" duration="0" status="Passed" started="1604873474000" external_report_url="https://dev.azure.com/mayar0110/PublicExtText/_apis/test/Runs/192/Results/100004"/>
+     
+         <test_run package="com.hp.devops.demoapp.BandTest" name="bandTestA1" class="com.hp.devops.demoapp.BandTest.bandTestA1" duration="0" status="Passed" started="1604873474000" external_report_url="https://dev.azure.com/mayar0110/PublicExtText/_apis/test/Runs/192/Results/100005"/>
+     
+         <test_run package="com.hp.devops.demoapp.BandTest" name="bandTestA11" class="com.hp.devops.demoapp.BandTest.bandTestA11" duration="0" status="Passed" started="1604873474000" external_report_url="https://dev.azure.com/mayar0110/PublicExtText/_apis/test/Runs/192/Results/100006"/>
+     
+         <test_run package="com.hp.devops.demoapp.CalcsTest" name="sub_test_A" class="com.hp.devops.demoapp.CalcsTest.sub_test_A" duration="0" status="Failed" started="1604873474000" external_report_url="https://dev.azure.com/mayar0110/PublicExtText/_apis/test/Runs/192/Results/100007">
+             
+                 <error message="expected:&lt;4&gt; but was:&lt;-5&gt;">java.lang.AssertionError: expected:&amp;lt;4&amp;gt; but was:&amp;lt;-5&amp;gt;
+ 	at org.junit.Assert.fail(Assert.java:88)
+ 	at org.junit.Assert.failNotEquals(Assert.java:743)
+ 	at org.junit.Assert.assertEquals(Assert.java:118)
+ 	at org.junit.Assert.assertEquals(Assert.java:555)
+ 	at org.junit.Assert.assertEquals(Assert.java:542)
+ 	at com.hp.devops.demoapp.CalcsTest.sub_test_A(CalcsTest.java:26)
+ 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+ 	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+ 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+ 	at java.lang.reflect.Method.invoke(Method.java:498)
+ 	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:47)
+ 	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+ 	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:44)
+ 	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)
+ 	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:271)
+ 	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:70)
+ 	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:50)
+ 	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:238)
+ 	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:63)
+ 	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:236)
+ 	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:53)
+ 	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:229)
+ 	at org.junit.runners.ParentRunner.run(ParentRunner.java:309)
+ 	at org.apache.maven.surefire.junit4.JUnit4Provider.execute(JUnit4Provider.java:252)
+ 	at org.apache.maven.surefire.junit4.JUnit4Provider.executeTestSet(JUnit4Provider.java:141)
+ 	at org.apache.maven.surefire.junit4.JUnit4Provider.invoke(JUnit4Provider.java:112)
+ 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+ 	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+ 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+ 	at java.lang.reflect.Method.invoke(Method.java:498)
+ 	at org.apache.maven.surefire.util.ReflectionUtils.invokeMethodWithArray(ReflectionUtils.java:189)
+ 	at org.apache.maven.surefire.booter.ProviderFactory$ProviderProxy.invoke(ProviderFactory.java:165)
+ 	at org.apache.maven.surefire.booter.ProviderFactory.invokeProvider(ProviderFactory.java:85)
+ 	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:115)
+ 	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:75)
+ </error>
+         </test_run>
+     
+         <test_run package="com.hp.devops.demoapp.CalcsTest" name="sub_test_B" class="com.hp.devops.demoapp.CalcsTest.sub_test_B" duration="0" status="Failed" started="1604873474000" external_report_url="https://dev.azure.com/mayar0110/PublicExtText/_apis/test/Runs/192/Results/100008">
+             
+                 <error message="expected:&lt;2&gt; but was:&lt;-7&gt;">java.lang.AssertionError: expected:&amp;lt;2&amp;gt; but was:&amp;lt;-7&amp;gt;
+ 	at org.junit.Assert.fail(Assert.java:88)
+ 	at org.junit.Assert.failNotEquals(Assert.java:743)
+ 	at org.junit.Assert.assertEquals(Assert.java:118)
+ 	at org.junit.Assert.assertEquals(Assert.java:555)
+ 	at org.junit.Assert.assertEquals(Assert.java:542)
+ 	at com.hp.devops.demoapp.CalcsTest.sub_test_B(CalcsTest.java:31)
+ 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+ 	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+ 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+ 	at java.lang.reflect.Method.invoke(Method.java:498)
+ 	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:47)
+ 	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+ 	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:44)
+ 	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)
+ 	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:271)
+ 	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:70)
+ 	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:50)
+ 	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:238)
+ 	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:63)
+ 	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:236)
+ 	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:53)
+ 	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:229)
+ 	at org.junit.runners.ParentRunner.run(ParentRunner.java:309)
+ 	at org.apache.maven.surefire.junit4.JUnit4Provider.execute(JUnit4Provider.java:252)
+ 	at org.apache.maven.surefire.junit4.JUnit4Provider.executeTestSet(JUnit4Provider.java:141)
+ 	at org.apache.maven.surefire.junit4.JUnit4Provider.invoke(JUnit4Provider.java:112)
+ 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+ 	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+ 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+ 	at java.lang.reflect.Method.invoke(Method.java:498)
+ 	at org.apache.maven.surefire.util.ReflectionUtils.invokeMethodWithArray(ReflectionUtils.java:189)
+ 	at org.apache.maven.surefire.booter.ProviderFactory$ProviderProxy.invoke(ProviderFactory.java:165)
+ 	at org.apache.maven.surefire.booter.ProviderFactory.invokeProvider(ProviderFactory.java:85)
+ 	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:115)
+ 	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:75)
+ </error>
+         </test_run>
+     
+         <test_run package="com.hp.devops.demoapp.CalcsTest" name="sub_test_C" class="com.hp.devops.demoapp.CalcsTest.sub_test_C" duration="0" status="Failed" started="1604873474000" external_report_url="https://dev.azure.com/mayar0110/PublicExtText/_apis/test/Runs/192/Results/100009">
+             
+                 <error message="expected:&lt;3&gt; but was:&lt;-6&gt;">java.lang.AssertionError: expected:&amp;lt;3&amp;gt; but was:&amp;lt;-6&amp;gt;
+ 	at org.junit.Assert.fail(Assert.java:88)
+ 	at org.junit.Assert.failNotEquals(Assert.java:743)
+ 	at org.junit.Assert.assertEquals(Assert.java:118)
+ 	at org.junit.Assert.assertEquals(Assert.java:555)
+ 	at org.junit.Assert.assertEquals(Assert.java:542)
+ 	at com.hp.devops.demoapp.CalcsTest.sub_test_C(CalcsTest.java:36)
+ 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+ 	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+ 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+ 	at java.lang.reflect.Method.invoke(Method.java:498)
+ 	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:47)
+ 	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+ 	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:44)
+ 	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)
+ 	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:271)
+ 	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:70)
+ 	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:50)
+ 	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:238)
+ 	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:63)
+ 	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:236)
+ 	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:53)
+ 	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:229)
+ 	at org.junit.runners.ParentRunner.run(ParentRunner.java:309)
+ 	at org.apache.maven.surefire.junit4.JUnit4Provider.execute(JUnit4Provider.java:252)
+ 	at org.apache.maven.surefire.junit4.JUnit4Provider.executeTestSet(JUnit4Provider.java:141)
+ 	at org.apache.maven.surefire.junit4.JUnit4Provider.invoke(JUnit4Provider.java:112)
+ 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+ 	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+ 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+ 	at java.lang.reflect.Method.invoke(Method.java:498)
+ 	at org.apache.maven.surefire.util.ReflectionUtils.invokeMethodWithArray(ReflectionUtils.java:189)
+ 	at org.apache.maven.surefire.booter.ProviderFactory$ProviderProxy.invoke(ProviderFactory.java:165)
+ 	at org.apache.maven.surefire.booter.ProviderFactory.invokeProvider(ProviderFactory.java:85)
+ 	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:115)
+ 	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:75)
+ </error>
+         </test_run>
+     
+         <test_run package="com.hp.devops.demoapp.CalcsTest" name="neq_test_A" class="com.hp.devops.demoapp.CalcsTest.neq_test_A" duration="0" status="Failed" started="1604873474000" external_report_url="https://dev.azure.com/mayar0110/PublicExtText/_apis/test/Runs/192/Results/100010">
+             
+                 <error message="java.lang.AssertionError
+ 	at org.junit.Assert.fail(Assert.java:86)
+ 	at org.junit.Assert.assertTrue(Assert.java:41)
+ 	at org.junit.Assert.assertTrue(Assert.java:52)
+ 	at com.hp.devops.demoapp.CalcsTest.neq_test_A(CalcsTest.java:51)
+ 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+ 	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+ 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+ 	at java.lang.reflect.Method.invoke(Method.java:498)
+ 	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:47)
+ 	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+ 	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:44)
+ 	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)
+ 	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:271)
+ 	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:70)
+ 	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:50)
+ 	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:238)
+ 	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:63)
+ 	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:236)
+ 	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:53)
+ 	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:229)
+ 	at org.junit.runners.ParentRunner.run(ParentRunner.java:309)
+ 	at org.apache.maven.surefire.junit4.JUnit4Provider.execute(JUnit4Provider.java:252)
+ 	at org.apache.maven.surefire.junit4.JUnit4Provider.executeTestSet(JUnit4Provider.java:141)
+ 	at org.apache.maven.surefire.junit4.JUnit4Provider.invoke(JUnit4Provider.java:112)
+ 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+ 	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+ 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+ 	at java.lang.reflect.Method.invoke(Method.java:498)
+ 	at org.apache.maven.surefire.util.ReflectionUtils.invokeMethodWithArray(ReflectionUtils.java:189)
+ 	at org.apache.maven.surefire.booter.ProviderFactory$ProviderProxy.invoke(ProviderFactory.java:165)
+ 	at org.apache.maven.surefire.booter.ProviderFactory.invokeProvider(ProviderFactory.java:85)
+ 	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:115)
+ 	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:75)
+ ">java.lang.AssertionError
+ 	at org.junit.Assert.fail(Assert.java:86)
+ 	at org.junit.Assert.assertTrue(Assert.java:41)
+ 	at org.junit.Assert.assertTrue(Assert.java:52)
+ 	at com.hp.devops.demoapp.CalcsTest.neq_test_A(CalcsTest.java:51)
+ 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+ 	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+ 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+ 	at java.lang.reflect.Method.invoke(Method.java:498)
+ 	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:47)
+ 	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+ 	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:44)
+ 	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)
+ 	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:271)
+ 	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:70)
+ 	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:50)
+ 	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:238)
+ 	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:63)
+ 	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:236)
+ 	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:53)
+ 	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:229)
+ 	at org.junit.runners.ParentRunner.run(ParentRunner.java:309)
+ 	at org.apache.maven.surefire.junit4.JUnit4Provider.execute(JUnit4Provider.java:252)
+ 	at org.apache.maven.surefire.junit4.JUnit4Provider.executeTestSet(JUnit4Provider.java:141)
+ 	at org.apache.maven.surefire.junit4.JUnit4Provider.invoke(JUnit4Provider.java:112)
+ 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+ 	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+ 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+ 	at java.lang.reflect.Method.invoke(Method.java:498)
+ 	at org.apache.maven.surefire.util.ReflectionUtils.invokeMethodWithArray(ReflectionUtils.java:189)
+ 	at org.apache.maven.surefire.booter.ProviderFactory$ProviderProxy.invoke(ProviderFactory.java:165)
+ 	at org.apache.maven.surefire.booter.ProviderFactory.invokeProvider(ProviderFactory.java:85)
+ 	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:115)
+ 	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:75)
+ </error>
+         </test_run>
+     
+         <test_run package="com.hp.devops.demoapp.CalcsTest" name="neq_test_B" class="com.hp.devops.demoapp.CalcsTest.neq_test_B" duration="0" status="Failed" started="1604873474000" external_report_url="https://dev.azure.com/mayar0110/PublicExtText/_apis/test/Runs/192/Results/100011">
+             
+                 <error message="java.lang.AssertionError
+ 	at org.junit.Assert.fail(Assert.java:86)
+ 	at org.junit.Assert.assertTrue(Assert.java:41)
+ 	at org.junit.Assert.assertTrue(Assert.java:52)
+ 	at com.hp.devops.demoapp.CalcsTest.neq_test_B(CalcsTest.java:56)
+ 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+ 	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+ 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+ 	at java.lang.reflect.Method.invoke(Method.java:498)
+ 	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:47)
+ 	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+ 	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:44)
+ 	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)
+ 	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:271)
+ 	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:70)
+ 	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:50)
+ 	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:238)
+ 	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:63)
+ 	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:236)
+ 	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:53)
+ 	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:229)
+ 	at org.junit.runners.ParentRunner.run(ParentRunner.java:309)
+ 	at org.apache.maven.surefire.junit4.JUnit4Provider.execute(JUnit4Provider.java:252)
+ 	at org.apache.maven.surefire.junit4.JUnit4Provider.executeTestSet(JUnit4Provider.java:141)
+ 	at org.apache.maven.surefire.junit4.JUnit4Provider.invoke(JUnit4Provider.java:112)
+ 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+ 	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+ 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+ 	at java.lang.reflect.Method.invoke(Method.java:498)
+ 	at org.apache.maven.surefire.util.ReflectionUtils.invokeMethodWithArray(ReflectionUtils.java:189)
+ 	at org.apache.maven.surefire.booter.ProviderFactory$ProviderProxy.invoke(ProviderFactory.java:165)
+ 	at org.apache.maven.surefire.booter.ProviderFactory.invokeProvider(ProviderFactory.java:85)
+ 	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:115)
+ 	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:75)
+ ">java.lang.AssertionError
+ 	at org.junit.Assert.fail(Assert.java:86)
+ 	at org.junit.Assert.assertTrue(Assert.java:41)
+ 	at org.junit.Assert.assertTrue(Assert.java:52)
+ 	at com.hp.devops.demoapp.CalcsTest.neq_test_B(CalcsTest.java:56)
+ 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+ 	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+ 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+ 	at java.lang.reflect.Method.invoke(Method.java:498)
+ 	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:47)
+ 	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+ 	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:44)
+ 	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)
+ 	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:271)
+ 	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:70)
+ 	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:50)
+ 	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:238)
+ 	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:63)
+ 	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:236)
+ 	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:53)
+ 	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:229)
+ 	at org.junit.runners.ParentRunner.run(ParentRunner.java:309)
+ 	at org.apache.maven.surefire.junit4.JUnit4Provider.execute(JUnit4Provider.java:252)
+ 	at org.apache.maven.surefire.junit4.JUnit4Provider.executeTestSet(JUnit4Provider.java:141)
+ 	at org.apache.maven.surefire.junit4.JUnit4Provider.invoke(JUnit4Provider.java:112)
+ 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+ 	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+ 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+ 	at java.lang.reflect.Method.invoke(Method.java:498)
+ 	at org.apache.maven.surefire.util.ReflectionUtils.invokeMethodWithArray(ReflectionUtils.java:189)
+ 	at org.apache.maven.surefire.booter.ProviderFactory$ProviderProxy.invoke(ProviderFactory.java:165)
+ 	at org.apache.maven.surefire.booter.ProviderFactory.invokeProvider(ProviderFactory.java:85)
+ 	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:115)
+ 	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:75)
+ </error>
+         </test_run>
+     
+         <test_run package="com.hp.devops.demoapp.CalcsTest" name="eq_test_A" class="com.hp.devops.demoapp.CalcsTest.eq_test_A" duration="0" status="Passed" started="1604873474000" external_report_url="https://dev.azure.com/mayar0110/PublicExtText/_apis/test/Runs/192/Results/100012"/>
+     
+         <test_run package="com.hp.devops.demoapp.CalcsTest" name="eq_test_B" class="com.hp.devops.demoapp.CalcsTest.eq_test_B" duration="0" status="Passed" started="1604873474000" external_report_url="https://dev.azure.com/mayar0110/PublicExtText/_apis/test/Runs/192/Results/100013"/>
+     
+         <test_run package="com.hp.devops.demoapp.CalcsTest" name="sum_test_A" class="com.hp.devops.demoapp.CalcsTest.sum_test_A" duration="0" status="Failed" started="1604873474000" external_report_url="https://dev.azure.com/mayar0110/PublicExtText/_apis/test/Runs/192/Results/100014">
+             
+                 <error message="expected:&lt;3&gt; but was:&lt;-2&gt;">java.lang.AssertionError: expected:&amp;lt;3&amp;gt; but was:&amp;lt;-2&amp;gt;
+ 	at org.junit.Assert.fail(Assert.java:88)
+ 	at org.junit.Assert.failNotEquals(Assert.java:743)
+ 	at org.junit.Assert.assertEquals(Assert.java:118)
+ 	at org.junit.Assert.assertEquals(Assert.java:555)
+ 	at org.junit.Assert.assertEquals(Assert.java:542)
+ 	at com.hp.devops.demoapp.CalcsTest.sum_test_A(CalcsTest.java:21)
+ 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+ 	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+ 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+ 	at java.lang.reflect.Method.invoke(Method.java:498)
+ 	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:47)
+ 	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+ 	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:44)
+ 	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)
+ 	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:271)
+ 	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:70)
+ 	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:50)
+ 	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:238)
+ 	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:63)
+ 	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:236)
+ 	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:53)
+ 	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:229)
+ 	at org.junit.runners.ParentRunner.run(ParentRunner.java:309)
+ 	at org.apache.maven.surefire.junit4.JUnit4Provider.execute(JUnit4Provider.java:252)
+ 	at org.apache.maven.surefire.junit4.JUnit4Provider.executeTestSet(JUnit4Provider.java:141)
+ 	at org.apache.maven.surefire.junit4.JUnit4Provider.invoke(JUnit4Provider.java:112)
+ 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+ 	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+ 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+ 	at java.lang.reflect.Method.invoke(Method.java:498)
+ 	at org.apache.maven.surefire.util.ReflectionUtils.invokeMethodWithArray(ReflectionUtils.java:189)
+ 	at org.apache.maven.surefire.booter.ProviderFactory$ProviderProxy.invoke(ProviderFactory.java:165)
+ 	at org.apache.maven.surefire.booter.ProviderFactory.invokeProvider(ProviderFactory.java:85)
+ 	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:115)
+ 	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:75)
+ </error>
+         </test_run>
+     
+         <test_run package="com.hp.devops.demoapp.CalcsTest" name="neq_test_C_BrokenTest" class="com.hp.devops.demoapp.CalcsTest.neq_test_C_BrokenTest" duration="0" status="Passed" started="1604873474000" external_report_url="https://dev.azure.com/mayar0110/PublicExtText/_apis/test/Runs/192/Results/100015"/>
+     
+         <test_run package="com.hp.devops.demoapp.DataManagerTest" name="dataManagerTestA" class="com.hp.devops.demoapp.DataManagerTest.dataManagerTestA" duration="0" status="Failed" started="1604873474000" external_report_url="https://dev.azure.com/mayar0110/PublicExtText/_apis/test/Runs/192/Results/100016">
+             
+                 <error message="expected:&lt;servletContext [  must  ] not be null&gt; but was:&lt;servletContext [must] not be null&gt;">org.junit.ComparisonFailure: expected:&amp;lt;servletContext [  must  ] not be null&amp;gt; but was:&amp;lt;servletContext [must] not be null&amp;gt;
+ 	at org.junit.Assert.assertEquals(Assert.java:115)
+ 	at org.junit.Assert.assertEquals(Assert.java:144)
+ 	at com.hp.devops.demoapp.DataManagerTest.dataManagerTestA(DataManagerTest.java:24)
+ 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+ 	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+ 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+ 	at java.lang.reflect.Method.invoke(Method.java:498)
+ 	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:47)
+ 	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+ 	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:44)
+ 	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)
+ 	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:271)
+ 	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:70)
+ 	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:50)
+ 	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:238)
+ 	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:63)
+ 	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:236)
+ 	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:53)
+ 	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:229)
+ 	at org.junit.runners.ParentRunner.run(ParentRunner.java:309)
+ 	at org.apache.maven.surefire.junit4.JUnit4Provider.execute(JUnit4Provider.java:252)
+ 	at org.apache.maven.surefire.junit4.JUnit4Provider.executeTestSet(JUnit4Provider.java:141)
+ 	at org.apache.maven.surefire.junit4.JUnit4Provider.invoke(JUnit4Provider.java:112)
+ 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+ 	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+ 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+ 	at java.lang.reflect.Method.invoke(Method.java:498)
+ 	at org.apache.maven.surefire.util.ReflectionUtils.invokeMethodWithArray(ReflectionUtils.java:189)
+ 	at org.apache.maven.surefire.booter.ProviderFactory$ProviderProxy.invoke(ProviderFactory.java:165)
+ 	at org.apache.maven.surefire.booter.ProviderFactory.invokeProvider(ProviderFactory.java:85)
+ 	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:115)
+ 	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:75)
+ </error>
+         </test_run>
+     
+         <test_run package="com.hp.devops.demoapp.DataManagerTest" name="dataManagerTestB" class="com.hp.devops.demoapp.DataManagerTest.dataManagerTestB" duration="13" status="Passed" started="1604873474000" external_report_url="https://dev.azure.com/mayar0110/PublicExtText/_apis/test/Runs/192/Results/100017"/>
+     
+         <test_run package="com.hp.devops.demoapp.DataManagerTest" name="dataManagerTestC" class="com.hp.devops.demoapp.DataManagerTest.dataManagerTestC" duration="0" status="Passed" started="1604873474000" external_report_url="https://dev.azure.com/mayar0110/PublicExtText/_apis/test/Runs/192/Results/100018"/>
+     
+         <test_run package="com.hp.devops.demoapp.DataManagerTest" name="dataManagerTestD" class="com.hp.devops.demoapp.DataManagerTest.dataManagerTestD" duration="0" status="Passed" started="1604873474000" external_report_url="https://dev.azure.com/mayar0110/PublicExtText/_apis/test/Runs/192/Results/100019"/>
+     
+         <test_run package="com.hp.devops.demoapp.DataManagerTest" name="dataManagerTestE" class="com.hp.devops.demoapp.DataManagerTest.dataManagerTestE" duration="0" status="Passed" started="1604873474000" external_report_url="https://dev.azure.com/mayar0110/PublicExtText/_apis/test/Runs/192/Results/100020"/>
+     
+         <test_run package="com.hp.devops.demoapp.DataManagerTest" name="failTestForCoverageAnalysisB" class="com.hp.devops.demoapp.DataManagerTest.failTestForCoverageAnalysisB" duration="14" status="Passed" started="1604873474000" external_report_url="https://dev.azure.com/mayar0110/PublicExtText/_apis/test/Runs/192/Results/100021"/>
+     
+         <test_run package="com.hp.devops.demoapp.UtilsTest" name="testSimpleLogical" class="com.hp.devops.demoapp.UtilsTest.testSimpleLogical" duration="3" status="Passed" started="1604873474000" external_report_url="https://dev.azure.com/mayar0110/PublicExtText/_apis/test/Runs/192/Results/100022"/>
+     
+         <test_run package="com.hp.devops.demoapp.UtilsTest" name="test1WithVeeonaeeeaaaaaaaame" class="com.hp.devops.demoapp.UtilsTest.test1WithVeeonaeeeaaaaaaaame" duration="0" status="Passed" started="1604873474000" external_report_url="https://dev.azure.com/mayar0110/PublicExtText/_apis/test/Runs/192/Results/100023"/>
+     
+         <test_run package="com.hp.devops.demoapp.UtilsTest" name="failTestForCoverageAnalysisA" class="com.hp.devops.demoapp.UtilsTest.failTestForCoverageAnalysisA" duration="7" status="Passed" started="1604873474000" external_report_url="https://dev.azure.com/mayar0110/PublicExtText/_apis/test/Runs/192/Results/100024"/>
+     
+         <test_run package="com.hp.devops.demoapp.UtilsTest" name="nodifyTestA" class="com.hp.devops.demoapp.UtilsTest.nodifyTestA" duration="7" status="Passed" started="1604873474000" external_report_url="https://dev.azure.com/mayar0110/PublicExtText/_apis/test/Runs/192/Results/100025"/>
+     
+         <test_run package="com.hp.devops.demoapp.UtilsTest" name="nodifyTestB" class="com.hp.devops.demoapp.UtilsTest.nodifyTestB" duration="0" status="Passed" started="1604873474000" external_report_url="https://dev.azure.com/mayar0110/PublicExtText/_apis/test/Runs/192/Results/100026"/>
+     
+         <test_run package="com.hp.devops.demoapp.UtilsTest" name="nodifyTestC" class="com.hp.devops.demoapp.UtilsTest.nodifyTestC" duration="10" status="Passed" started="1604873474000" external_report_url="https://dev.azure.com/mayar0110/PublicExtText/_apis/test/Runs/192/Results/100027"/>
+     
+         <test_run package="com.hp.devops.demoapp.UtilsTest" name="nodifyTestD" class="com.hp.devops.demoapp.UtilsTest.nodifyTestD" duration="0" status="Passed" started="1604873474000" external_report_url="https://dev.azure.com/mayar0110/PublicExtText/_apis/test/Runs/192/Results/100028"/>
+     
+         <test_run package="com.hp.devops.demoapp.UtilsTest" name="nodifyTestE" class="com.hp.devops.demoapp.UtilsTest.nodifyTestE" duration="0" status="Passed" started="1604873474000" external_report_url="https://dev.azure.com/mayar0110/PublicExtText/_apis/test/Runs/192/Results/100029"/>
+     
+         <test_run package="com.hp.devops.demoapp.UtilsTest" name="nodifyTestF" class="com.hp.devops.demoapp.UtilsTest.nodifyTestF" duration="0" status="Passed" started="1604873474000" external_report_url="https://dev.azure.com/mayar0110/PublicExtText/_apis/test/Runs/192/Results/100030"/>
+     
+         <test_run package="com.hp.devops.demoapp.UtilsTest" name="nodifyTestG" class="com.hp.devops.demoapp.UtilsTest.nodifyTestG" duration="0" status="Passed" started="1604873474000" external_report_url="https://dev.azure.com/mayar0110/PublicExtText/_apis/test/Runs/192/Results/100031"/>
+ </test_runs></test_result>
+ [DEBUG]Sending results to:https://qa8.almoctane.com:/internal-api/shared_spaces/1001//analytics/ci/test-results?skip-errors=true&instance-id=qa8&job-ci-id=AzureDevOps.qa8.PublicExtText.mayarfl.hpe-demo-app-1&build-ci-id=266
+ [DEBUG]The result string is: <?xml version="1.0" encoding="utf-8" standalone="yes"?><test_result><build server_id="qa8" job_id="AzureDevOps.qa8.PublicExtText.mayarfl.hpe-demo-app-1" build_id="266"/>
+ <test_fields>
+     
+         <test_field type="Framework" value="junit"/>
+     
+         <test_field type="Test_Level" value="Unit Test"/>
+ </test_fields>
+ <test_runs>
+     
+         <test_run package="com.hp.devops.demoapp.BandTest" name="bandTestA" class="com.hp.devops.demoapp.BandTest.bandTestA" duration="7" status="Passed" started="1604873474000" external_report_url="https://dev.azure.com/mayar0110/PublicExtText/_apis/test/Runs/192/Results/100000"/>
+     
+         <test_run package="com.hp.devops.demoapp.BandTest" name="bandTestB" class="com.hp.devops.demoapp.BandTest.bandTestB" duration="10" status="Failed" started="1604873474000" external_report_url="https://dev.azure.com/mayar0110/PublicExtText/_apis/test/Runs/192/Results/100001">
+             
+                 <error message="expected:&lt;json must have [  an id  ] property&gt; but was:&lt;json must have [an id] property&gt;">org.junit.ComparisonFailure: expected:&amp;lt;json must have [  an id  ] property&amp;gt; but was:&amp;lt;json must have [an id] property&amp;gt;
+ 	at org.junit.Assert.assertEquals(Assert.java:115)
+ 	at org.junit.Assert.assertEquals(Assert.java:144)
+ 	at com.hp.devops.demoapp.BandTest.bandTestB(BandTest.java:69)
+ 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+ 	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+ 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+ 	at java.lang.reflect.Method.invoke(Method.java:498)
+ 	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:47)
+ 	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+ 	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:44)
+ 	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)
+ 	at org.junit.internal.runners.statements.RunBefores.evaluate(RunBefores.java:26)
+ 	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:271)
+ 	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:70)
+ 	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:50)
+ 	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:238)
+ 	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:63)
+ 	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:236)
+ 	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:53)
+ 	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:229)
+ 	at org.junit.runners.ParentRunner.run(ParentRunner.java:309)
+ 	at org.apache.maven.surefire.junit4.JUnit4Provider.execute(JUnit4Provider.java:252)
+ 	at org.apache.maven.surefire.junit4.JUnit4Provider.executeTestSet(JUnit4Provider.java:141)
+ 	at org.apache.maven.surefire.junit4.JUnit4Provider.invoke(JUnit4Provider.java:112)
+ 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+ 	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+ 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+ 	at java.lang.reflect.Method.invoke(Method.java:498)
+ 	at org.apache.maven.surefire.util.ReflectionUtils.invokeMethodWithArray(ReflectionUtils.java:189)
+ 	at org.apache.maven.surefire.booter.ProviderFactory$ProviderProxy.invoke(ProviderFactory.java:165)
+ 	at org.apache.maven.surefire.booter.ProviderFactory.invokeProvider(ProviderFactory.java:85)
+ 	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:115)
+ 	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:75)
+ </error>
+         </test_run>
+     
+         <test_run package="com.hp.devops.demoapp.BandTest" name="bandTestC" class="com.hp.devops.demoapp.BandTest.bandTestC" duration="0" status="Passed" started="1604873474000" external_report_url="https://dev.azure.com/mayar0110/PublicExtText/_apis/test/Runs/192/Results/100002"/>
+     
+         <test_run package="com.hp.devops.demoapp.BandTest" name="bandTestD" class="com.hp.devops.demoapp.BandTest.bandTestD" duration="0" status="Skipped" started="1604873474000" external_report_url="https://dev.azure.com/mayar0110/PublicExtText/_apis/test/Runs/192/Results/100003"/>
+     
+         <test_run package="com.hp.devops.demoapp.BandTest" name="bandTestE" class="com.hp.devops.demoapp.BandTest.bandTestE" duration="0" status="Passed" started="1604873474000" external_report_url="https://dev.azure.com/mayar0110/PublicExtText/_apis/test/Runs/192/Results/100004"/>
+     
+         <test_run package="com.hp.devops.demoapp.BandTest" name="bandTestA1" class="com.hp.devops.demoapp.BandTest.bandTestA1" duration="0" status="Passed" started="1604873474000" external_report_url="https://dev.azure.com/mayar0110/PublicExtText/_apis/test/Runs/192/Results/100005"/>
+     
+         <test_run package="com.hp.devops.demoapp.BandTest" name="bandTestA11" class="com.hp.devops.demoapp.BandTest.bandTestA11" duration="0" status="Passed" started="1604873474000" external_report_url="https://dev.azure.com/mayar0110/PublicExtText/_apis/test/Runs/192/Results/100006"/>
+     
+         <test_run package="com.hp.devops.demoapp.CalcsTest" name="sub_test_A" class="com.hp.devops.demoapp.CalcsTest.sub_test_A" duration="0" status="Failed" started="1604873474000" external_report_url="https://dev.azure.com/mayar0110/PublicExtText/_apis/test/Runs/192/Results/100007">
+             
+                 <error message="expected:&lt;4&gt; but was:&lt;-5&gt;">java.lang.AssertionError: expected:&amp;lt;4&amp;gt; but was:&amp;lt;-5&amp;gt;
+ 	at org.junit.Assert.fail(Assert.java:88)
+ 	at org.junit.Assert.failNotEquals(Assert.java:743)
+ 	at org.junit.Assert.assertEquals(Assert.java:118)
+ 	at org.junit.Assert.assertEquals(Assert.java:555)
+ 	at org.junit.Assert.assertEquals(Assert.java:542)
+ 	at com.hp.devops.demoapp.CalcsTest.sub_test_A(CalcsTest.java:26)
+ 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+ 	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+ 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+ 	at java.lang.reflect.Method.invoke(Method.java:498)
+ 	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:47)
+ 	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+ 	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:44)
+ 	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)
+ 	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:271)
+ 	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:70)
+ 	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:50)
+ 	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:238)
+ 	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:63)
+ 	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:236)
+ 	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:53)
+ 	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:229)
+ 	at org.junit.runners.ParentRunner.run(ParentRunner.java:309)
+ 	at org.apache.maven.surefire.junit4.JUnit4Provider.execute(JUnit4Provider.java:252)
+ 	at org.apache.maven.surefire.junit4.JUnit4Provider.executeTestSet(JUnit4Provider.java:141)
+ 	at org.apache.maven.surefire.junit4.JUnit4Provider.invoke(JUnit4Provider.java:112)
+ 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+ 	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+ 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+ 	at java.lang.reflect.Method.invoke(Method.java:498)
+ 	at org.apache.maven.surefire.util.ReflectionUtils.invokeMethodWithArray(ReflectionUtils.java:189)
+ 	at org.apache.maven.surefire.booter.ProviderFactory$ProviderProxy.invoke(ProviderFactory.java:165)
+ 	at org.apache.maven.surefire.booter.ProviderFactory.invokeProvider(ProviderFactory.java:85)
+ 	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:115)
+ 	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:75)
+ </error>
+         </test_run>
+     
+         <test_run package="com.hp.devops.demoapp.CalcsTest" name="sub_test_B" class="com.hp.devops.demoapp.CalcsTest.sub_test_B" duration="0" status="Failed" started="1604873474000" external_report_url="https://dev.azure.com/mayar0110/PublicExtText/_apis/test/Runs/192/Results/100008">
+             
+                 <error message="expected:&lt;2&gt; but was:&lt;-7&gt;">java.lang.AssertionError: expected:&amp;lt;2&amp;gt; but was:&amp;lt;-7&amp;gt;
+ 	at org.junit.Assert.fail(Assert.java:88)
+ 	at org.junit.Assert.failNotEquals(Assert.java:743)
+ 	at org.junit.Assert.assertEquals(Assert.java:118)
+ 	at org.junit.Assert.assertEquals(Assert.java:555)
+ 	at org.junit.Assert.assertEquals(Assert.java:542)
+ 	at com.hp.devops.demoapp.CalcsTest.sub_test_B(CalcsTest.java:31)
+ 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+ 	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+ 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+ 	at java.lang.reflect.Method.invoke(Method.java:498)
+ 	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:47)
+ 	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+ 	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:44)
+ 	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)
+ 	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:271)
+ 	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:70)
+ 	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:50)
+ 	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:238)
+ 	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:63)
+ 	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:236)
+ 	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:53)
+ 	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:229)
+ 	at org.junit.runners.ParentRunner.run(ParentRunner.java:309)
+ 	at org.apache.maven.surefire.junit4.JUnit4Provider.execute(JUnit4Provider.java:252)
+ 	at org.apache.maven.surefire.junit4.JUnit4Provider.executeTestSet(JUnit4Provider.java:141)
+ 	at org.apache.maven.surefire.junit4.JUnit4Provider.invoke(JUnit4Provider.java:112)
+ 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+ 	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+ 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+ 	at java.lang.reflect.Method.invoke(Method.java:498)
+ 	at org.apache.maven.surefire.util.ReflectionUtils.invokeMethodWithArray(ReflectionUtils.java:189)
+ 	at org.apache.maven.surefire.booter.ProviderFactory$ProviderProxy.invoke(ProviderFactory.java:165)
+ 	at org.apache.maven.surefire.booter.ProviderFactory.invokeProvider(ProviderFactory.java:85)
+ 	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:115)
+ 	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:75)
+ </error>
+         </test_run>
+     
+         <test_run package="com.hp.devops.demoapp.CalcsTest" name="sub_test_C" class="com.hp.devops.demoapp.CalcsTest.sub_test_C" duration="0" status="Failed" started="1604873474000" external_report_url="https://dev.azure.com/mayar0110/PublicExtText/_apis/test/Runs/192/Results/100009">
+             
+                 <error message="expected:&lt;3&gt; but was:&lt;-6&gt;">java.lang.AssertionError: expected:&amp;lt;3&amp;gt; but was:&amp;lt;-6&amp;gt;
+ 	at org.junit.Assert.fail(Assert.java:88)
+ 	at org.junit.Assert.failNotEquals(Assert.java:743)
+ 	at org.junit.Assert.assertEquals(Assert.java:118)
+ 	at org.junit.Assert.assertEquals(Assert.java:555)
+ 	at org.junit.Assert.assertEquals(Assert.java:542)
+ 	at com.hp.devops.demoapp.CalcsTest.sub_test_C(CalcsTest.java:36)
+ 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+ 	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+ 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+ 	at java.lang.reflect.Method.invoke(Method.java:498)
+ 	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:47)
+ 	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+ 	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:44)
+ 	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)
+ 	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:271)
+ 	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:70)
+ 	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:50)
+ 	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:238)
+ 	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:63)
+ 	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:236)
+ 	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:53)
+ 	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:229)
+ 	at org.junit.runners.ParentRunner.run(ParentRunner.java:309)
+ 	at org.apache.maven.surefire.junit4.JUnit4Provider.execute(JUnit4Provider.java:252)
+ 	at org.apache.maven.surefire.junit4.JUnit4Provider.executeTestSet(JUnit4Provider.java:141)
+ 	at org.apache.maven.surefire.junit4.JUnit4Provider.invoke(JUnit4Provider.java:112)
+ 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+ 	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+ 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+ 	at java.lang.reflect.Method.invoke(Method.java:498)
+ 	at org.apache.maven.surefire.util.ReflectionUtils.invokeMethodWithArray(ReflectionUtils.java:189)
+ 	at org.apache.maven.surefire.booter.ProviderFactory$ProviderProxy.invoke(ProviderFactory.java:165)
+ 	at org.apache.maven.surefire.booter.ProviderFactory.invokeProvider(ProviderFactory.java:85)
+ 	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:115)
+ 	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:75)
+ </error>
+         </test_run>
+     
+         <test_run package="com.hp.devops.demoapp.CalcsTest" name="neq_test_A" class="com.hp.devops.demoapp.CalcsTest.neq_test_A" duration="0" status="Failed" started="1604873474000" external_report_url="https://dev.azure.com/mayar0110/PublicExtText/_apis/test/Runs/192/Results/100010">
+             
+                 <error message="java.lang.AssertionError
+ 	at org.junit.Assert.fail(Assert.java:86)
+ 	at org.junit.Assert.assertTrue(Assert.java:41)
+ 	at org.junit.Assert.assertTrue(Assert.java:52)
+ 	at com.hp.devops.demoapp.CalcsTest.neq_test_A(CalcsTest.java:51)
+ 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+ 	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+ 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+ 	at java.lang.reflect.Method.invoke(Method.java:498)
+ 	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:47)
+ 	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+ 	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:44)
+ 	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)
+ 	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:271)
+ 	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:70)
+ 	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:50)
+ 	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:238)
+ 	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:63)
+ 	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:236)
+ 	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:53)
+ 	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:229)
+ 	at org.junit.runners.ParentRunner.run(ParentRunner.java:309)
+ 	at org.apache.maven.surefire.junit4.JUnit4Provider.execute(JUnit4Provider.java:252)
+ 	at org.apache.maven.surefire.junit4.JUnit4Provider.executeTestSet(JUnit4Provider.java:141)
+ 	at org.apache.maven.surefire.junit4.JUnit4Provider.invoke(JUnit4Provider.java:112)
+ 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+ 	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+ 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+ 	at java.lang.reflect.Method.invoke(Method.java:498)
+ 	at org.apache.maven.surefire.util.ReflectionUtils.invokeMethodWithArray(ReflectionUtils.java:189)
+ 	at org.apache.maven.surefire.booter.ProviderFactory$ProviderProxy.invoke(ProviderFactory.java:165)
+ 	at org.apache.maven.surefire.booter.ProviderFactory.invokeProvider(ProviderFactory.java:85)
+ 	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:115)
+ 	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:75)
+ ">java.lang.AssertionError
+ 	at org.junit.Assert.fail(Assert.java:86)
+ 	at org.junit.Assert.assertTrue(Assert.java:41)
+ 	at org.junit.Assert.assertTrue(Assert.java:52)
+ 	at com.hp.devops.demoapp.CalcsTest.neq_test_A(CalcsTest.java:51)
+ 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+ 	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+ 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+ 	at java.lang.reflect.Method.invoke(Method.java:498)
+ 	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:47)
+ 	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+ 	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:44)
+ 	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)
+ 	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:271)
+ 	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:70)
+ 	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:50)
+ 	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:238)
+ 	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:63)
+ 	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:236)
+ 	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:53)
+ 	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:229)
+ 	at org.junit.runners.ParentRunner.run(ParentRunner.java:309)
+ 	at org.apache.maven.surefire.junit4.JUnit4Provider.execute(JUnit4Provider.java:252)
+ 	at org.apache.maven.surefire.junit4.JUnit4Provider.executeTestSet(JUnit4Provider.java:141)
+ 	at org.apache.maven.surefire.junit4.JUnit4Provider.invoke(JUnit4Provider.java:112)
+ 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+ 	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+ 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+ 	at java.lang.reflect.Method.invoke(Method.java:498)
+ 	at org.apache.maven.surefire.util.ReflectionUtils.invokeMethodWithArray(ReflectionUtils.java:189)
+ 	at org.apache.maven.surefire.booter.ProviderFactory$ProviderProxy.invoke(ProviderFactory.java:165)
+ 	at org.apache.maven.surefire.booter.ProviderFactory.invokeProvider(ProviderFactory.java:85)
+ 	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:115)
+ 	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:75)
+ </error>
+         </test_run>
+     
+         <test_run package="com.hp.devops.demoapp.CalcsTest" name="neq_test_B" class="com.hp.devops.demoapp.CalcsTest.neq_test_B" duration="0" status="Failed" started="1604873474000" external_report_url="https://dev.azure.com/mayar0110/PublicExtText/_apis/test/Runs/192/Results/100011">
+             
+                 <error message="java.lang.AssertionError
+ 	at org.junit.Assert.fail(Assert.java:86)
+ 	at org.junit.Assert.assertTrue(Assert.java:41)
+ 	at org.junit.Assert.assertTrue(Assert.java:52)
+ 	at com.hp.devops.demoapp.CalcsTest.neq_test_B(CalcsTest.java:56)
+ 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+ 	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+ 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+ 	at java.lang.reflect.Method.invoke(Method.java:498)
+ 	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:47)
+ 	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+ 	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:44)
+ 	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)
+ 	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:271)
+ 	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:70)
+ 	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:50)
+ 	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:238)
+ 	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:63)
+ 	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:236)
+ 	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:53)
+ 	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:229)
+ 	at org.junit.runners.ParentRunner.run(ParentRunner.java:309)
+ 	at org.apache.maven.surefire.junit4.JUnit4Provider.execute(JUnit4Provider.java:252)
+ 	at org.apache.maven.surefire.junit4.JUnit4Provider.executeTestSet(JUnit4Provider.java:141)
+ 	at org.apache.maven.surefire.junit4.JUnit4Provider.invoke(JUnit4Provider.java:112)
+ 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+ 	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+ 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+ 	at java.lang.reflect.Method.invoke(Method.java:498)
+ 	at org.apache.maven.surefire.util.ReflectionUtils.invokeMethodWithArray(ReflectionUtils.java:189)
+ 	at org.apache.maven.surefire.booter.ProviderFactory$ProviderProxy.invoke(ProviderFactory.java:165)
+ 	at org.apache.maven.surefire.booter.ProviderFactory.invokeProvider(ProviderFactory.java:85)
+ 	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:115)
+ 	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:75)
+ ">java.lang.AssertionError
+ 	at org.junit.Assert.fail(Assert.java:86)
+ 	at org.junit.Assert.assertTrue(Assert.java:41)
+ 	at org.junit.Assert.assertTrue(Assert.java:52)
+ 	at com.hp.devops.demoapp.CalcsTest.neq_test_B(CalcsTest.java:56)
+ 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+ 	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+ 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+ 	at java.lang.reflect.Method.invoke(Method.java:498)
+ 	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:47)
+ 	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+ 	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:44)
+ 	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)
+ 	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:271)
+ 	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:70)
+ 	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:50)
+ 	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:238)
+ 	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:63)
+ 	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:236)
+ 	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:53)
+ 	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:229)
+ 	at org.junit.runners.ParentRunner.run(ParentRunner.java:309)
+ 	at org.apache.maven.surefire.junit4.JUnit4Provider.execute(JUnit4Provider.java:252)
+ 	at org.apache.maven.surefire.junit4.JUnit4Provider.executeTestSet(JUnit4Provider.java:141)
+ 	at org.apache.maven.surefire.junit4.JUnit4Provider.invoke(JUnit4Provider.java:112)
+ 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+ 	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+ 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+ 	at java.lang.reflect.Method.invoke(Method.java:498)
+ 	at org.apache.maven.surefire.util.ReflectionUtils.invokeMethodWithArray(ReflectionUtils.java:189)
+ 	at org.apache.maven.surefire.booter.ProviderFactory$ProviderProxy.invoke(ProviderFactory.java:165)
+ 	at org.apache.maven.surefire.booter.ProviderFactory.invokeProvider(ProviderFactory.java:85)
+ 	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:115)
+ 	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:75)
+ </error>
+         </test_run>
+     
+         <test_run package="com.hp.devops.demoapp.CalcsTest" name="eq_test_A" class="com.hp.devops.demoapp.CalcsTest.eq_test_A" duration="0" status="Passed" started="1604873474000" external_report_url="https://dev.azure.com/mayar0110/PublicExtText/_apis/test/Runs/192/Results/100012"/>
+     
+         <test_run package="com.hp.devops.demoapp.CalcsTest" name="eq_test_B" class="com.hp.devops.demoapp.CalcsTest.eq_test_B" duration="0" status="Passed" started="1604873474000" external_report_url="https://dev.azure.com/mayar0110/PublicExtText/_apis/test/Runs/192/Results/100013"/>
+     
+         <test_run package="com.hp.devops.demoapp.CalcsTest" name="sum_test_A" class="com.hp.devops.demoapp.CalcsTest.sum_test_A" duration="0" status="Failed" started="1604873474000" external_report_url="https://dev.azure.com/mayar0110/PublicExtText/_apis/test/Runs/192/Results/100014">
+             
+                 <error message="expected:&lt;3&gt; but was:&lt;-2&gt;">java.lang.AssertionError: expected:&amp;lt;3&amp;gt; but was:&amp;lt;-2&amp;gt;
+ 	at org.junit.Assert.fail(Assert.java:88)
+ 	at org.junit.Assert.failNotEquals(Assert.java:743)
+ 	at org.junit.Assert.assertEquals(Assert.java:118)
+ 	at org.junit.Assert.assertEquals(Assert.java:555)
+ 	at org.junit.Assert.assertEquals(Assert.java:542)
+ 	at com.hp.devops.demoapp.CalcsTest.sum_test_A(CalcsTest.java:21)
+ 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+ 	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+ 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+ 	at java.lang.reflect.Method.invoke(Method.java:498)
+ 	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:47)
+ 	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+ 	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:44)
+ 	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)
+ 	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:271)
+ 	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:70)
+ 	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:50)
+ 	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:238)
+ 	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:63)
+ 	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:236)
+ 	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:53)
+ 	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:229)
+ 	at org.junit.runners.ParentRunner.run(ParentRunner.java:309)
+ 	at org.apache.maven.surefire.junit4.JUnit4Provider.execute(JUnit4Provider.java:252)
+ 	at org.apache.maven.surefire.junit4.JUnit4Provider.executeTestSet(JUnit4Provider.java:141)
+ 	at org.apache.maven.surefire.junit4.JUnit4Provider.invoke(JUnit4Provider.java:112)
+ 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+ 	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+ 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+ 	at java.lang.reflect.Method.invoke(Method.java:498)
+ 	at org.apache.maven.surefire.util.ReflectionUtils.invokeMethodWithArray(ReflectionUtils.java:189)
+ 	at org.apache.maven.surefire.booter.ProviderFactory$ProviderProxy.invoke(ProviderFactory.java:165)
+ 	at org.apache.maven.surefire.booter.ProviderFactory.invokeProvider(ProviderFactory.java:85)
+ 	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:115)
+ 	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:75)
+ </error>
+         </test_run>
+     
+         <test_run package="com.hp.devops.demoapp.CalcsTest" name="neq_test_C_BrokenTest" class="com.hp.devops.demoapp.CalcsTest.neq_test_C_BrokenTest" duration="0" status="Passed" started="1604873474000" external_report_url="https://dev.azure.com/mayar0110/PublicExtText/_apis/test/Runs/192/Results/100015"/>
+     
+         <test_run package="com.hp.devops.demoapp.DataManagerTest" name="dataManagerTestA" class="com.hp.devops.demoapp.DataManagerTest.dataManagerTestA" duration="0" status="Failed" started="1604873474000" external_report_url="https://dev.azure.com/mayar0110/PublicExtText/_apis/test/Runs/192/Results/100016">
+             
+                 <error message="expected:&lt;servletContext [  must  ] not be null&gt; but was:&lt;servletContext [must] not be null&gt;">org.junit.ComparisonFailure: expected:&amp;lt;servletContext [  must  ] not be null&amp;gt; but was:&amp;lt;servletContext [must] not be null&amp;gt;
+ 	at org.junit.Assert.assertEquals(Assert.java:115)
+ 	at org.junit.Assert.assertEquals(Assert.java:144)
+ 	at com.hp.devops.demoapp.DataManagerTest.dataManagerTestA(DataManagerTest.java:24)
+ 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+ 	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+ 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+ 	at java.lang.reflect.Method.invoke(Method.java:498)
+ 	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:47)
+ 	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+ 	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:44)
+ 	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)
+ 	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:271)
+ 	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:70)
+ 	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:50)
+ 	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:238)
+ 	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:63)
+ 	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:236)
+ 	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:53)
+ 	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:229)
+ 	at org.junit.runners.ParentRunner.run(ParentRunner.java:309)
+ 	at org.apache.maven.surefire.junit4.JUnit4Provider.execute(JUnit4Provider.java:252)
+ 	at org.apache.maven.surefire.junit4.JUnit4Provider.executeTestSet(JUnit4Provider.java:141)
+ 	at org.apache.maven.surefire.junit4.JUnit4Provider.invoke(JUnit4Provider.java:112)
+ 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+ 	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+ 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+ 	at java.lang.reflect.Method.invoke(Method.java:498)
+ 	at org.apache.maven.surefire.util.ReflectionUtils.invokeMethodWithArray(ReflectionUtils.java:189)
+ 	at org.apache.maven.surefire.booter.ProviderFactory$ProviderProxy.invoke(ProviderFactory.java:165)
+ 	at org.apache.maven.surefire.booter.ProviderFactory.invokeProvider(ProviderFactory.java:85)
+ 	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:115)
+ 	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:75)
+ </error>
+         </test_run>
+     
+         <test_run package="com.hp.devops.demoapp.DataManagerTest" name="dataManagerTestB" class="com.hp.devops.demoapp.DataManagerTest.dataManagerTestB" duration="13" status="Passed" started="1604873474000" external_report_url="https://dev.azure.com/mayar0110/PublicExtText/_apis/test/Runs/192/Results/100017"/>
+     
+         <test_run package="com.hp.devops.demoapp.DataManagerTest" name="dataManagerTestC" class="com.hp.devops.demoapp.DataManagerTest.dataManagerTestC" duration="0" status="Passed" started="1604873474000" external_report_url="https://dev.azure.com/mayar0110/PublicExtText/_apis/test/Runs/192/Results/100018"/>
+     
+         <test_run package="com.hp.devops.demoapp.DataManagerTest" name="dataManagerTestD" class="com.hp.devops.demoapp.DataManagerTest.dataManagerTestD" duration="0" status="Passed" started="1604873474000" external_report_url="https://dev.azure.com/mayar0110/PublicExtText/_apis/test/Runs/192/Results/100019"/>
+     
+         <test_run package="com.hp.devops.demoapp.DataManagerTest" name="dataManagerTestE" class="com.hp.devops.demoapp.DataManagerTest.dataManagerTestE" duration="0" status="Passed" started="1604873474000" external_report_url="https://dev.azure.com/mayar0110/PublicExtText/_apis/test/Runs/192/Results/100020"/>
+     
+         <test_run package="com.hp.devops.demoapp.DataManagerTest" name="failTestForCoverageAnalysisB" class="com.hp.devops.demoapp.DataManagerTest.failTestForCoverageAnalysisB" duration="14" status="Passed" started="1604873474000" external_report_url="https://dev.azure.com/mayar0110/PublicExtText/_apis/test/Runs/192/Results/100021"/>
+     
+         <test_run package="com.hp.devops.demoapp.UtilsTest" name="testSimpleLogical" class="com.hp.devops.demoapp.UtilsTest.testSimpleLogical" duration="3" status="Passed" started="1604873474000" external_report_url="https://dev.azure.com/mayar0110/PublicExtText/_apis/test/Runs/192/Results/100022"/>
+     
+         <test_run package="com.hp.devops.demoapp.UtilsTest" name="test1WithVeeonaeeeaaaaaaaame" class="com.hp.devops.demoapp.UtilsTest.test1WithVeeonaeeeaaaaaaaame" duration="0" status="Passed" started="1604873474000" external_report_url="https://dev.azure.com/mayar0110/PublicExtText/_apis/test/Runs/192/Results/100023"/>
+     
+         <test_run package="com.hp.devops.demoapp.UtilsTest" name="failTestForCoverageAnalysisA" class="com.hp.devops.demoapp.UtilsTest.failTestForCoverageAnalysisA" duration="7" status="Passed" started="1604873474000" external_report_url="https://dev.azure.com/mayar0110/PublicExtText/_apis/test/Runs/192/Results/100024"/>
+     
+         <test_run package="com.hp.devops.demoapp.UtilsTest" name="nodifyTestA" class="com.hp.devops.demoapp.UtilsTest.nodifyTestA" duration="7" status="Passed" started="1604873474000" external_report_url="https://dev.azure.com/mayar0110/PublicExtText/_apis/test/Runs/192/Results/100025"/>
+     
+         <test_run package="com.hp.devops.demoapp.UtilsTest" name="nodifyTestB" class="com.hp.devops.demoapp.UtilsTest.nodifyTestB" duration="0" status="Passed" started="1604873474000" external_report_url="https://dev.azure.com/mayar0110/PublicExtText/_apis/test/Runs/192/Results/100026"/>
+     
+         <test_run package="com.hp.devops.demoapp.UtilsTest" name="nodifyTestC" class="com.hp.devops.demoapp.UtilsTest.nodifyTestC" duration="10" status="Passed" started="1604873474000" external_report_url="https://dev.azure.com/mayar0110/PublicExtText/_apis/test/Runs/192/Results/100027"/>
+     
+         <test_run package="com.hp.devops.demoapp.UtilsTest" name="nodifyTestD" class="com.hp.devops.demoapp.UtilsTest.nodifyTestD" duration="0" status="Passed" started="1604873474000" external_report_url="https://dev.azure.com/mayar0110/PublicExtText/_apis/test/Runs/192/Results/100028"/>
+     
+         <test_run package="com.hp.devops.demoapp.UtilsTest" name="nodifyTestE" class="com.hp.devops.demoapp.UtilsTest.nodifyTestE" duration="0" status="Passed" started="1604873474000" external_report_url="https://dev.azure.com/mayar0110/PublicExtText/_apis/test/Runs/192/Results/100029"/>
+     
+         <test_run package="com.hp.devops.demoapp.UtilsTest" name="nodifyTestF" class="com.hp.devops.demoapp.UtilsTest.nodifyTestF" duration="0" status="Passed" started="1604873474000" external_report_url="https://dev.azure.com/mayar0110/PublicExtText/_apis/test/Runs/192/Results/100030"/>
+     
+         <test_run package="com.hp.devops.demoapp.UtilsTest" name="nodifyTestG" class="com.hp.devops.demoapp.UtilsTest.nodifyTestG" duration="0" status="Passed" started="1604873474000" external_report_url="https://dev.azure.com/mayar0110/PublicExtText/_apis/test/Runs/192/Results/100031"/>
+ </test_runs></test_result>
+ [DEBUG]sendTestResult response:
+ [DEBUG]{"statusCode":202,"body":"{\"status\":\"queued\",\"id\":710866}","headers":{"date":"Sun, 08 Nov 2020 22:11:44 GMT","content-type":"application/json","transfer-encoding":"chunked","connection":"close","strict-transport-security":"max-age=31536000","octane-server":"884001","x-content-type-options":"nosniff","x-xss-protection":"1","vary":"Accept-Encoding","server-timing":"1.31xEntitiesReader;dur=100;,2.04xQueryTransformationReadCommand;dur=16;,3.01xSharedSpaceFieldsReadCommand;dur=1;,CPU;dur=-1;,DB;dur=-1;,WaitForConn;dur=-1;,ES;dur=-1;,Total;dur=-1;","octane-db-query-count":"-1","octane-es-query-count":"-1","cf-cache-status":"DYNAMIC","cf-request-id":"064b835b8a0000a6db85363000000001","expect-ct":"max-age=604800, report-uri=\"https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct\"","server":"cloudflare","cf-ray":"5ef2a1a5a841a6db-DUB"},"request":{"uri":{"protocol":"https:","slashes":true,"auth":null,"host":"qa8.almoctane.com","port":443,"hostname":"qa8.almoctane.com","hash":null,"search":"?skip-errors=true&instance-id=qa8&job-ci-id=AzureDevOps.qa8.PublicExtText.mayarfl.hpe-demo-app-1&build-ci-id=266","query":"skip-errors=true&instance-id=qa8&job-ci-id=AzureDevOps.qa8.PublicExtText.mayarfl.hpe-demo-app-1&build-ci-id=266","pathname":"/internal-api/shared_spaces/1001/analytics/ci/test-results","path":"/internal-api/shared_spaces/1001/analytics/ci/test-results?skip-errors=true&instance-id=qa8&job-ci-id=AzureDevOps.qa8.PublicExtText.mayarfl.hpe-demo-app-1&build-ci-id=266","href":"https://qa8.almoctane.com/internal-api/shared_spaces/1001/analytics/ci/test-results?skip-errors=true&instance-id=qa8&job-ci-id=AzureDevOps.qa8.PublicExtText.mayarfl.hpe-demo-app-1&build-ci-id=266"},"method":"POST","headers":{"HPECLIENTTYPE":"HPE_CI_CLIENT","Content-Type":"application/xml","cookie":"__cfduid=dc22f2062ec340b31bc92adedb025023d1604873498; OCTANE_USER=QXp1cmVfbjFqZ3BvOWVrbW02OGJnMjR3cTQ0cHE3bQ==; LWSSO_COOKIE_KEY=nV5cXrKKD3s7utSpLcnthldFyZf1bWcQZ-E2zzAtYRC7FZenmM8iICfLyOoKlgWl8iznIuyRoRLmKl1JTsDGJseTPONC_yqCbqQ4z6HszIYsaoOE8WyLrs5cRqBM4PjRkwrNcEL_td7Hj282btgbjmIFBZa92Nh2bTx7BVKtQWU13YGDIrrNShkMyFWCMetiF1ZTHcQe-tiuLLOjWf1xP6VnBoxiI5JHQutQnfKcB7Dfbl5QbmkUfWDTGgYriLsqWkK4BtkBU47l4IJOSPh7d9qE_fZHwEiACbmM7GnhfxtsM_wM8ERTl82bIwE7wyp_hrcZK0M3aegPMbU5JxDiU5uOKmO3zu7UgJ5vKG1d5Qs.","content-length":37030}}}
+ ##[section]Finishing: octaneendtask
