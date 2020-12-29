@@ -1,6 +1,6 @@
 variables:
   # InjectAlmOctaneTasks: 'true'
-  OctaneConnectionName: 'qa9'
+  OctaneConnectionName: 'qa8'
   WS_ID: '1002'
   GithubRepositoryConnection: 'maya_git_acces'
 
