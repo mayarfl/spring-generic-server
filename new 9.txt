@@ -6,42 +6,7 @@
  Author       : Micro Focus
  Help         : 
  ==============================================================================
- ##[debug]Using node path: /home/vsts/agents/2.175.2/externals/node/bin/node
- ##[debug]agent.TempDirectory=/home/vsts/work/_temp
- ##[debug]loading inputs and endpoints
- ##[debug]loading INPUT_OCTANESERVICECONNECTION
- ##[debug]loading INPUT_WORKSPACELIST
- ##[debug]loading INPUT_GITHUBREPOSITORYCONNECTION
- ##[debug]loading ENDPOINT_AUTH_b45ca5aa-aab3-478e-a120-ada9569bedec
- ##[debug]loading ENDPOINT_AUTH_SCHEME_b45ca5aa-aab3-478e-a120-ada9569bedec
- ##[debug]loading ENDPOINT_AUTH_PARAMETER_b45ca5aa-aab3-478e-a120-ada9569bedec_USERNAME
- ##[debug]loading ENDPOINT_AUTH_PARAMETER_b45ca5aa-aab3-478e-a120-ada9569bedec_PASSWORD
- ##[debug]loading ENDPOINT_AUTH_30ef8765-59d3-4b2e-9305-a3d8177ebc31
- ##[debug]loading ENDPOINT_AUTH_SCHEME_30ef8765-59d3-4b2e-9305-a3d8177ebc31
- ##[debug]loading ENDPOINT_AUTH_PARAMETER_30ef8765-59d3-4b2e-9305-a3d8177ebc31_ACCESSTOKEN
- ##[debug]loading ENDPOINT_AUTH_SYSTEMVSSCONNECTION
- ##[debug]loading ENDPOINT_AUTH_SCHEME_SYSTEMVSSCONNECTION
- ##[debug]loading ENDPOINT_AUTH_PARAMETER_SYSTEMVSSCONNECTION_ACCESSTOKEN
- ##[debug]loading SECRET_SYSTEM_ACCESSTOKEN
- ##[debug]loaded 14
- ##[debug]Agent.ProxyUrl=undefined
- ##[debug]Agent.CAInfo=undefined
- ##[debug]Agent.ClientCert=undefined
- ##[debug]Agent.SkipCertValidation=undefined
- ##[debug]ALMOctaneLogLevel=debug
  [DEBUG]ALMOctaneLogLevel: debug
- ##[debug]which 'node'
- ##[debug]found: '/usr/local/bin/node'
- ##[debug]which 'node'
- ##[debug]found: '/usr/local/bin/node'
- ##[debug]/usr/local/bin/node arg: --version
- ##[debug]/usr/local/bin/node arg: --version
- ##[debug]exec tool: /usr/local/bin/node
- ##[debug]exec tool: /usr/local/bin/node
- ##[debug]arguments:
- ##[debug]arguments:
- ##[debug]   --version
- ##[debug]   --version
  [command]/usr/local/bin/node --version
  v14.15.0
  [INFO]node version = v14.15.0
@@ -59,13 +24,6 @@
  ##[debug]b45ca5aa-aab3-478e-a120-ada9569bedec exists true
  [DEBUG]clientId = ***
  [DEBUG]clientSecret = ***
- ##[debug]System.TeamFoundationCollectionUri=https://dev.azure.com/mayar0110/
- ##[debug]System.TeamProjectId=a56aa160-dc3a-432f-80dd-9e483fc7cad4
- ##[debug]System.TeamProject=PublicExtText
- ##[debug]Build.DefinitionName=mayarfl.hpe-demo-app-1
- ##[debug]Build.BuildId=266
- ##[debug]Build.SourceBranchName=master
- ##[debug]Agent.JobName=AlmOctanePipelineEnd
  [INFO]collectionUri = https://dev.azure.com/mayar0110/
  [INFO]projectId = a56aa160-dc3a-432f-80dd-9e483fc7cad4
  [INFO]projectName = PublicExtText
